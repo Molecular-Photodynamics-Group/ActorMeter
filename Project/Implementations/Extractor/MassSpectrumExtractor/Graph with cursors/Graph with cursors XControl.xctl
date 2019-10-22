@@ -1,0 +1,65 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<XControl LVVersion="14008000">
+	<Property Name="NI.Lib.Icon" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!(]!!!*Q(C=\&gt;7R=2MR%!81N=?"5X&lt;A91P&lt;!FNA#^M#5Y6M96NA"R[WM#WQ"&lt;9A0ZYR'E?G!WPM1$AN&gt;@S(!ZZQG&amp;0%VLZ'@)H8:_X\&lt;^P(^7@8H\4Y;"`NX\;8JZPUX@@MJXC]C.3I6K5S(F/^DHTE)R`ZS%@?]J;XP/5N&lt;XH*3V\SEJ?]Z#F0?=J4HP+5&lt;Y=]Z#%0/&gt;+9@%QU"BU$D-YI-4[':XC':XB]D?%:HO%:HO(2*9:H?):H?)&lt;(&lt;4%]QT-]QT-]BNIEMRVSHO%R@$20]T20]T30+;.Z'K".VA:OAW"%O^B/GK&gt;ZGM&gt;J.%`T.%`T.)`,U4T.UTT.UTROW6;F.]XDE0-9*IKH?)KH?)L(U&amp;%]R6-]R6-]JIPC+:[#+"/7Q2'CX&amp;1[F#`&amp;5TR_2@%54`%54`'YN$WBWF&lt;GI8E==J\E3:\E3:\E-51E4`)E4`)EDW%D?:)H?:)H?5Q6S:-]S:-A;6,42RIMX:A[J3"Z`'S\*&lt;?HV*MENS.C&lt;&gt;Z9GT,7:IOVC7*NDFA00&gt;&lt;$D0719CV_L%7.N6CR&amp;C(7(R=,(1M4;Z*9.T][RNXH46X62:X632X61?X6\H(L8_ZYP^`D&gt;LP&amp;^8K.S_53Z`-Z4K&gt;4()`(/"Q/M&gt;`P9\@&lt;P&lt;U'PDH?8AA`XUMPTP_EXOF`[8`Q&lt;IT0]?OYVOA(5/(_Z!!!!!!</Property>
+	<Property Name="NI.Lib.SourceVersion" Type="Int">335577088</Property>
+	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
+	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
+	<Property Name="NI.SortType" Type="Int">3</Property>
+	<Property Name="NI.XClass.Flags" Type="Int">0</Property>
+	<Property Name="NI.XItem.DeclaredLeakProof" Type="Bool">false</Property>
+	<Property Name="NI.XItem.Express" Type="Bool">false</Property>
+	<Property Name="NI.XItem.Name" Type="Str">XControl 1</Property>
+	<Property Name="NI.XItem.SupportsFatalErrorOut" Type="Bool">false</Property>
+	<Item Name="Methods" Type="Folder">
+		<Item Name="Load Cursors.vi" Type="Method VI" URL="../Methods/Load Cursors.vi"/>
+		<Item Name="Save Cursors.vi" Type="Method VI" URL="../Methods/Save Cursors.vi"/>
+		<Item Name="Save data.vi" Type="Method VI" URL="../Methods/Save data.vi"/>
+		<Item Name="Center Cursor Y.vi" Type="Method VI" URL="../Methods/Center Cursor Y.vi"/>
+		<Item Name="Delete all cursors.vi" Type="Method VI" URL="../Methods/Delete all cursors.vi"/>
+		<Item Name="Check cursor movement.vi" Type="Method VI" URL="../Methods/Check cursor movement.vi">
+			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		</Item>
+		<Item Name="Create cursors.vi" Type="Method VI" URL="../Methods/Create cursors.vi"/>
+	</Item>
+	<Item Name="VIs" Type="Folder">
+		<Item Name="Create one pair.vi" Type="VI" URL="../VIs/Create one pair.vi">
+			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		</Item>
+	</Item>
+	<Item Name="Graph with cursors Data.ctl" Type="Ability VI" URL="../Graph with cursors Data.ctl">
+		<Property Name="NI.XItem.Name" Type="Str">Data</Property>
+	</Item>
+	<Item Name="Graph with cursors State.ctl" Type="Ability VI" URL="../Graph with cursors State.ctl">
+		<Property Name="NI.XItem.Name" Type="Str">State</Property>
+	</Item>
+	<Item Name="Graph with cursors Facade.vi" Type="Ability VI" URL="../Graph with cursors Facade.vi">
+		<Property Name="NI.XItem.Name" Type="Str">Facade</Property>
+	</Item>
+	<Item Name="Graph with cursors Init.vi" Type="Ability VI" URL="../Graph with cursors Init.vi">
+		<Property Name="NI.XItem.Name" Type="Str">Init</Property>
+	</Item>
+	<Item Name="Cursors" Type="Property Folder">
+		<Property Name="NI.LibItem.Prop.Identifier" Type="Str">Cursors</Property>
+		<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">Cursors</Property>
+		<Item Name="[Property] Cursors Read.vi" Type="Property VI" URL="../Properties/[Property] Cursors Read.vi"/>
+		<Item Name="[Property] Cursors Write.vi" Type="Property VI" URL="../Properties/[Property] Cursors Write.vi"/>
+	</Item>
+	<Item Name="Cursor Pairs" Type="Property Folder">
+		<Property Name="NI.LibItem.Prop.Identifier" Type="Str">Cursor Pairs</Property>
+		<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">Cursor Pairs</Property>
+		<Item Name="[Property] Cursor Pairs Read.vi" Type="Property VI" URL="../Properties/[Property] Cursor Pairs Read.vi"/>
+		<Item Name="[Property] Cursor Pairs Write.vi" Type="Property VI" URL="../Properties/[Property] Cursor Pairs Write.vi"/>
+	</Item>
+	<Item Name="Prefix" Type="Property Folder">
+		<Property Name="NI.LibItem.Prop.Identifier" Type="Str">Prefix</Property>
+		<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">Prefix</Property>
+		<Item Name="[Property] Prefix Read.vi" Type="Property VI" URL="../Properties/[Property] Prefix Read.vi"/>
+		<Item Name="[Property] Prefix Write.vi" Type="Property VI" URL="../Properties/[Property] Prefix Write.vi"/>
+	</Item>
+	<Item Name="Base path" Type="Property Folder">
+		<Property Name="NI.LibItem.Prop.Identifier" Type="Str">Base path</Property>
+		<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">Base path</Property>
+		<Item Name="[Property] Base path Write.vi" Type="Property VI" URL="../Properties/[Property] Base path Write.vi"/>
+	</Item>
+	<Item Name="Graph with cursors Test.vi" Type="VI" URL="../Graph with cursors Test.vi"/>
+</XControl>

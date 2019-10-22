@@ -1,0 +1,15 @@
+<configuration>
+	<info>
+		<name>Videoscan</name>
+		<description></description>
+	</info>
+	<devices>
+		<readout>Videoscan</readout>
+		<parameter>Wavelength Setter</parameter>
+	</devices>
+	<pipeline>
+		<processor>AbstractProcessor2D</processor>
+		<collector>AverageCollector2D</collector>
+		<extractor>ImagingExtractor</extractor>
+	</pipeline>
+</configuration>

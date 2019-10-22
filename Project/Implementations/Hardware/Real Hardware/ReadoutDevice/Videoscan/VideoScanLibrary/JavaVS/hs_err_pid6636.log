@@ -1,0 +1,297 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x04755a14, pid=6636, tid=0x000019f4
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_102-b14) (build 1.8.0_102-b14)
+# Java VM: Java HotSpot(TM) Client VM (25.102-b14 mixed mode windows-x86 )
+# Problematic frame:
+# C  [VsIj_Native.dll+0x15a14]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x023dc400):  JavaThread "main" [_thread_in_native, id=6644, stack(0x02310000,0x02360000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x00000000
+
+Registers:
+EAX=0x00000000, EBX=0x14a92698, ECX=0x1a495064, EDX=0x00000019
+ESP=0x0235eff0, EBP=0x0235f108, ESI=0x14a92698, EDI=0x0235f108
+EIP=0x04755a14, EFLAGS=0x00010246
+
+Top of Stack: (sp=0x0235eff0)
+0x0235eff0:   023dc400 14a92698 14a92698 cccccccc
+0x0235f000:   cccccccc cccccccc cccccccc cccccccc
+0x0235f010:   cccccccc cccccccc cccccccc cccccccc
+0x0235f020:   cccccccc cccccccc cccccccc cccccccc
+0x0235f030:   cccccccc cccccccc cccccccc cccccccc
+0x0235f040:   cccccccc cccccccc cccccccc cccccccc
+0x0235f050:   cccccccc cccccccc cccccccc cccccccc
+0x0235f060:   cccccccc cccccccc cccccccc cccccccc 
+
+Instructions: (pc=0x04755a14)
+0x047559f4:   00 00 00 b8 cc cc cc cc f3 ab 8b 45 10 50 e8 c7
+0x04755a04:   ef ff ff 8b c8 e8 16 ef ff ff 89 45 f8 8b 45 f8
+0x04755a14:   8b 08 8b f4 8b 55 f8 52 ff 51 08 3b f4 e8 86 ee
+0x04755a24:   ff ff 89 45 ec c7 45 e0 00 00 00 00 8b 45 ec 8b 
+
+
+Register to memory mapping:
+
+EAX=0x00000000 is an unknown value
+EBX={method} {0x14a9269c} 'getSettingList' '(I)[I' in 'Camera'
+ECX=0x1a495064 is an unknown value
+EDX=0x00000019 is an unknown value
+ESP=0x0235eff0 is pointing into the stack for thread: 0x023dc400
+EBP=0x0235f108 is pointing into the stack for thread: 0x023dc400
+ESI={method} {0x14a9269c} 'getSettingList' '(I)[I' in 'Camera'
+EDI=0x0235f108 is pointing into the stack for thread: 0x023dc400
+
+
+Stack: [0x02310000,0x02360000],  sp=0x0235eff0,  free space=315k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [VsIj_Native.dll+0x15a14]
+j  Camera.getSettingList(I)[I+0
+j  CameraSettingPanelContainer.<init>(LCamera;)V+20
+j  CameraPanel.<init>()V+42
+j  MainFrame.<init>()V+73
+j  Videoscan_.<init>()V+14
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0x15a6e5]
+V  [jvm.dll+0x2204fe]
+V  [jvm.dll+0x15a77e]
+V  [jvm.dll+0x166e38]
+V  [jvm.dll+0x1671e1]
+V  [jvm.dll+0x103bb8]
+C  [java.dll+0x3b3a]
+j  sun.reflect.NativeConstructorAccessorImpl.newInstance([Ljava/lang/Object;)Ljava/lang/Object;+85
+j  sun.reflect.DelegatingConstructorAccessorImpl.newInstance([Ljava/lang/Object;)Ljava/lang/Object;+5
+j  java.lang.reflect.Constructor.newInstance([Ljava/lang/Object;)Ljava/lang/Object;+79
+j  ExtJarVideoScan.initializeCamera()LCameraWrapper;+133
+j  ExtJarVideoScan.main([Ljava/lang/String;)V+8
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0x15a6e5]
+V  [jvm.dll+0x2204fe]
+V  [jvm.dll+0x15a77e]
+V  [jvm.dll+0x166e38]
+V  [jvm.dll+0x1670a3]
+V  [jvm.dll+0x103a43]
+C  [java.dll+0x3b26]
+j  sun.reflect.NativeMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+100
+j  sun.reflect.DelegatingMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+6
+j  java.lang.reflect.Method.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+56
+j  org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main([Ljava/lang/String;)V+195
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0x15a6e5]
+V  [jvm.dll+0x2204fe]
+V  [jvm.dll+0x15a77e]
+V  [jvm.dll+0xdc337]
+V  [jvm.dll+0xe48cf]
+C  [javaw.exe+0x22ab]
+C  [javaw.exe+0xaecf]
+C  [javaw.exe+0xaf59]
+C  [kernel32.dll+0x1336a]
+C  [ntdll.dll+0x39902]
+C  [ntdll.dll+0x398d5]
+C  0x00000000
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  Camera.getSettingList(I)[I+0
+j  CameraSettingPanelContainer.<init>(LCamera;)V+20
+j  CameraPanel.<init>()V+42
+j  MainFrame.<init>()V+73
+j  Videoscan_.<init>()V+14
+v  ~StubRoutines::call_stub
+j  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)Ljava/lang/Object;+0
+j  sun.reflect.NativeConstructorAccessorImpl.newInstance([Ljava/lang/Object;)Ljava/lang/Object;+85
+j  sun.reflect.DelegatingConstructorAccessorImpl.newInstance([Ljava/lang/Object;)Ljava/lang/Object;+5
+j  java.lang.reflect.Constructor.newInstance([Ljava/lang/Object;)Ljava/lang/Object;+79
+j  ExtJarVideoScan.initializeCamera()LCameraWrapper;+133
+j  ExtJarVideoScan.main([Ljava/lang/String;)V+8
+v  ~StubRoutines::call_stub
+j  sun.reflect.NativeMethodAccessorImpl.invoke0(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+0
+j  sun.reflect.NativeMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+100
+j  sun.reflect.DelegatingMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+6
+j  java.lang.reflect.Method.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+56
+j  org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main([Ljava/lang/String;)V+195
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x14e11000 JavaThread "AWT-Windows" daemon [_thread_in_native, id=6692, stack(0x15b70000,0x15bc0000)]
+  0x14e0e000 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=6684, stack(0x15a00000,0x15a50000)]
+  0x14cdfc00 JavaThread "Service Thread" daemon [_thread_blocked, id=6672, stack(0x15560000,0x155b0000)]
+  0x14cb8800 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=6668, stack(0x153f0000,0x15440000)]
+  0x14cb7800 JavaThread "Attach Listener" daemon [_thread_blocked, id=6664, stack(0x152e0000,0x15330000)]
+  0x14cb4800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=6660, stack(0x15230000,0x15280000)]
+  0x14ca6000 JavaThread "Finalizer" daemon [_thread_blocked, id=6656, stack(0x02370000,0x023c0000)]
+  0x14c81000 JavaThread "Reference Handler" daemon [_thread_blocked, id=6652, stack(0x04790000,0x047e0000)]
+=>0x023dc400 JavaThread "main" [_thread_in_native, id=6644, stack(0x02310000,0x02360000)]
+
+Other Threads:
+  0x14c7ac00 VMThread [stack: 0x15000000,0x15050000] [id=6648]
+  0x14ce6c00 WatcherThread [stack: 0x15660000,0x156b0000] [id=6676]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ def new generation   total 4928K, used 3644K [0x04800000, 0x04d50000, 0x09d50000)
+  eden space 4416K,  82% used [0x04800000, 0x04b8f358, 0x04c50000)
+  from space 512K,   0% used [0x04c50000, 0x04c50000, 0x04cd0000)
+  to   space 512K,   0% used [0x04cd0000, 0x04cd0000, 0x04d50000)
+ tenured generation   total 10944K, used 0K [0x09d50000, 0x0a800000, 0x14800000)
+   the space 10944K,   0% used [0x09d50000, 0x09d50000, 0x09d50200, 0x0a800000)
+ Metaspace       used 4923K, capacity 5141K, committed 5248K, reserved 5504K
+
+Card table byte_map: [0x046b0000,0x04740000] byte_map_base: 0x0468c000
+
+Polling page: 0x000c0000
+
+CodeCache: size=32768Kb used=834Kb max_used=834Kb free=31933Kb
+ bounds [0x026b0000, 0x02788000, 0x046b0000]
+ total_blobs=328 nmethods=132 adapters=128
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 0.584 Thread 0x14cb8800  128             java.util.HashMap::put (13 bytes)
+Event: 0.585 Thread 0x14cb8800 nmethod 128 0x0277d848 code [0x0277d950, 0x0277da48]
+Event: 0.585 Thread 0x14cb8800  129   !         sun.net.www.ParseUtil::decode (316 bytes)
+Event: 0.587 Thread 0x14cb8800 nmethod 129 0x0277dac8 code [0x0277dd80, 0x0277ec24]
+Event: 0.587 Thread 0x14cb8800  130             java.util.HashMap$Node::<init> (26 bytes)
+Event: 0.587 Thread 0x14cb8800 nmethod 130 0x027800c8 code [0x027801c0, 0x02780270]
+Event: 0.587 Thread 0x14cb8800  131             java.lang.Object::equals (11 bytes)
+Event: 0.587 Thread 0x14cb8800 nmethod 131 0x027802c8 code [0x027803c0, 0x02780450]
+Event: 0.595 Thread 0x14cb8800  132             java.lang.Class::getName (21 bytes)
+Event: 0.595 Thread 0x14cb8800 nmethod 132 0x027808c8 code [0x027809c0, 0x02780a7c]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 0.123 Thread 0x023dc400 Exception <a 'java/io/IOException'> (0x048ca710) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u102\7268\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 0.123 Thread 0x023dc400 Exception <a 'java/io/IOException'> (0x048ca9a8) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u102\7268\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 0.123 Thread 0x023dc400 Exception <a 'java/io/IOException'> (0x048cac10) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u102\7268\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 0.316 Thread 0x023dc400 Exception <a 'java/io/IOException'> (0x04947bb0) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u102\7268\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 0.316 Thread 0x023dc400 Exception <a 'java/io/IOException'> (0x04947e48) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u102\7268\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 0.316 Thread 0x023dc400 Exception <a 'java/io/IOException'> (0x049480b0) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u102\7268\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 0.379 Thread 0x023dc400 Exception <a 'java/io/FileNotFoundException'> (0x04960528) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u102\7268\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 0.418 Thread 0x023dc400 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x04a1aab8) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u102\7268\hotspot\src\share\vm\prims\methodHandles.cpp, line 1146]
+Event: 0.419 Thread 0x023dc400 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x04a26fa8) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u102\7268\hotspot\src\share\vm\prims\methodHandles.cpp, line 1146]
+Event: 0.460 Thread 0x023dc400 Exception <a 'java/io/FileNotFoundException'> (0x04aac5f0) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u102\7268\hotspot\src\share\vm\prims\jni.cpp, line 709]
+
+Events (10 events):
+Event: 1.604 loading class sun/awt/AppContext$PostShutdownEventRunnable
+Event: 1.604 loading class sun/awt/AppContext$PostShutdownEventRunnable done
+Event: 1.604 loading class sun/awt/AWTAutoShutdown$1
+Event: 1.604 loading class sun/awt/AWTAutoShutdown$1 done
+Event: 1.604 Thread 0x14e10800 Thread exited: 0x14e10800
+Event: 1.604 loading class java/awt/MenuComponent
+Event: 1.604 loading class java/awt/MenuComponent done
+Event: 1.604 loading class java/awt/TrayIcon
+Event: 1.605 loading class java/awt/TrayIcon done
+Event: 1.605 Thread 0x14e5dc00 Thread exited: 0x14e5dc00
+
+
+Dynamic libraries:
+0x000d0000 - 0x00103000 	C:\Program Files (x86)\Java\jre1.8.0_102\bin\javaw.exe
+0x77080000 - 0x77200000 	C:\Windows\SysWOW64\ntdll.dll
+0x749e0000 - 0x74af0000 	C:\Windows\syswow64\kernel32.dll
+0x75ed0000 - 0x75f17000 	C:\Windows\syswow64\KERNELBASE.dll
+0x75c30000 - 0x75cd1000 	C:\Windows\syswow64\ADVAPI32.dll
+0x758e0000 - 0x7598c000 	C:\Windows\syswow64\msvcrt.dll
+0x769b0000 - 0x769c9000 	C:\Windows\SysWOW64\sechost.dll
+0x75d10000 - 0x75e00000 	C:\Windows\syswow64\RPCRT4.dll
+0x74970000 - 0x749d0000 	C:\Windows\syswow64\SspiCli.dll
+0x74960000 - 0x7496c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x75760000 - 0x75860000 	C:\Windows\syswow64\USER32.dll
+0x76710000 - 0x767a0000 	C:\Windows\syswow64\GDI32.dll
+0x767a0000 - 0x767aa000 	C:\Windows\syswow64\LPK.dll
+0x769d0000 - 0x76a6d000 	C:\Windows\syswow64\USP10.dll
+0x716f0000 - 0x7188e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_41e855142bd5705d\COMCTL32.dll
+0x76460000 - 0x764b7000 	C:\Windows\syswow64\SHLWAPI.dll
+0x76180000 - 0x761e0000 	C:\Windows\system32\IMM32.DLL
+0x761e0000 - 0x762ac000 	C:\Windows\syswow64\MSCTF.dll
+0x6b740000 - 0x6b7ff000 	C:\Program Files (x86)\Java\jre1.8.0_102\bin\msvcr100.dll
+0x5a920000 - 0x5aced000 	C:\Program Files (x86)\Java\jre1.8.0_102\bin\client\jvm.dll
+0x6e760000 - 0x6e767000 	C:\Windows\system32\WSOCK32.dll
+0x75bf0000 - 0x75c25000 	C:\Windows\syswow64\WS2_32.dll
+0x769a0000 - 0x769a6000 	C:\Windows\syswow64\NSI.dll
+0x6e480000 - 0x6e4b2000 	C:\Windows\system32\WINMM.dll
+0x74890000 - 0x74899000 	C:\Windows\system32\VERSION.dll
+0x77050000 - 0x77055000 	C:\Windows\syswow64\PSAPI.DLL
+0x6d280000 - 0x6d28c000 	C:\Program Files (x86)\Java\jre1.8.0_102\bin\verify.dll
+0x6b710000 - 0x6b731000 	C:\Program Files (x86)\Java\jre1.8.0_102\bin\java.dll
+0x6c9b0000 - 0x6c9c3000 	C:\Program Files (x86)\Java\jre1.8.0_102\bin\zip.dll
+0x74b10000 - 0x7575c000 	C:\Windows\syswow64\SHELL32.dll
+0x76b20000 - 0x76c7d000 	C:\Windows\syswow64\ole32.dll
+0x76900000 - 0x7690b000 	C:\Windows\syswow64\profapi.dll
+0x71cc0000 - 0x71cd7000 	C:\Windows\system32\CRYPTSP.dll
+0x71ab0000 - 0x71aeb000 	C:\Windows\system32\rsaenh.dll
+0x75e00000 - 0x75e17000 	C:\Windows\syswow64\USERENV.dll
+0x6b6f0000 - 0x6b706000 	C:\Program Files (x86)\Java\jre1.8.0_102\bin\net.dll
+0x733f0000 - 0x7342c000 	C:\Windows\system32\mswsock.dll
+0x733b0000 - 0x733b6000 	C:\Windows\System32\wship6.dll
+0x71af0000 - 0x71b0c000 	C:\Windows\system32\IPHLPAPI.DLL
+0x71aa0000 - 0x71aa7000 	C:\Windows\system32\WINNSI.DLL
+0x6e4e0000 - 0x6e4ed000 	C:\Windows\system32\dhcpcsvc6.DLL
+0x6e4c0000 - 0x6e4d2000 	C:\Windows\system32\dhcpcsvc.DLL
+0x6b6e0000 - 0x6b6ef000 	C:\Program Files (x86)\Java\jre1.8.0_102\bin\nio.dll
+0x04740000 - 0x0478c000 	C:\Users\mpdlab\Desktop\CameraSoftware\VideoScanCamera\JavaVS\VsIj_Native.dll
+0x6b0b0000 - 0x6b1f5000 	C:\Program Files (x86)\Java\jre1.8.0_102\bin\awt.dll
+0x76a70000 - 0x76b01000 	C:\Windows\syswow64\OLEAUT32.dll
+0x718d0000 - 0x718e3000 	C:\Windows\system32\DWMAPI.DLL
+0x71a20000 - 0x71aa0000 	C:\Windows\system32\uxtheme.dll
+0x6ce50000 - 0x6d013000 	C:\Windows\system32\d3d9.dll
+0x6d250000 - 0x6d256000 	C:\Windows\system32\d3d8thk.dll
+0x59b50000 - 0x5a91e000 	C:\Windows\system32\nvd3dum.dll
+0x6de20000 - 0x6de45000 	C:\Windows\system32\powrprof.dll
+0x76570000 - 0x7670d000 	C:\Windows\syswow64\SETUPAPI.dll
+0x762b0000 - 0x762d7000 	C:\Windows\syswow64\CFGMGR32.dll
+0x74af0000 - 0x74b02000 	C:\Windows\syswow64\DEVOBJ.dll
+0x5ff10000 - 0x6004a000 	C:\Program Files (x86)\NVIDIA Corporation\3D Vision\nvSCPAPI.dll
+0x5fe20000 - 0x5ff0f000 	C:\Users\mpdlab\Desktop\CameraSoftware\VideoScanCamera\JavaVS\vscorelib_v4.dll
+0x76430000 - 0x7645f000 	C:\Windows\syswow64\WINTRUST.dll
+0x76300000 - 0x76421000 	C:\Windows\syswow64\CRYPT32.dll
+0x75990000 - 0x7599c000 	C:\Windows\syswow64\MSASN1.dll
+0x71290000 - 0x7137b000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+java_command: C:\Users\mpdlab\Desktop\CameraSoftware\VideoScanCamera\JavaVS\VS.jar
+java_class_path (initial): C:\Users\mpdlab\Desktop\CameraSoftware\VideoScanCamera\JavaVS\VS.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;D:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Agilent\IO Libraries Suite\bin;C:\Program Files\IVI Foundation\VISA\Win64\agvisa;C:\Program Files (x86)\Agilent\IO Libraries Suite\bin;D:\Program Files (x86)\IVI Foundation\VISA\WinNT\agvisa;C:\Program Files (x86)\IVI Foundation\IVI\bin;C:\Program Files\IVI Foundation\IVI\bin;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\
+USERNAME=mpdlab
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 15 Stepping 11, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 (6.1.7601.23543)
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 15 stepping 11, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, tsc
+
+Memory: 4k page, physical 6289912k(4504424k free), swap 19233964k(17303940k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.102-b14) for windows-x86 JRE (1.8.0_102-b14), built on Jun 22 2016 13:13:29 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Tue Nov 01 11:41:36 2016
+elapsed time: 3 seconds (0d 0h 0m 3s)
+

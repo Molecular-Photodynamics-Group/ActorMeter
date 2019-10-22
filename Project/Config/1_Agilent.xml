@@ -1,0 +1,15 @@
+<configuration>
+	<info>
+		<name>Agilent</name>
+		<description></description>
+	</info>
+	<devices>
+		<readout>Agilent DSO-X 3032A</readout>
+		<parameter>Wavelength Setter</parameter>
+	</devices>
+	<pipeline>
+		<processor>AbstractProcessor1D</processor>
+		<collector>AverageCollector1D</collector>
+		<extractor>MassSpectrumExtractor</extractor>
+	</pipeline>
+</configuration>

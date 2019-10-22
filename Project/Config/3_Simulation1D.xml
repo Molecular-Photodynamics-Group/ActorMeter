@@ -1,0 +1,15 @@
+<configuration>
+	<info>
+		<name>Simulation 1D</name>
+		<description></description>
+	</info>
+	<devices>
+		<readout>Simulated Oscilloscope</readout>
+		<parameter>Simulated ParameterDevice</parameter>
+	</devices>
+	<pipeline>
+		<processor>AbstractProcessor1D</processor>
+		<collector>AverageCollector1D</collector>
+		<extractor>MassSpectrumExtractor</extractor>
+	</pipeline>
+</configuration>

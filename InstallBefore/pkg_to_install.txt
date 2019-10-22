@@ -1,0 +1,8 @@
+MGI Monitored Actor v2.0.0.23 by MGI
+WebSockets v1.6.0.22 by MediaMongrels Ltd 
+
+Поставить пакет через VI package manager
+JKI State Machine v3.0.0.8 by JKI
+
+Поменять файлы по пути C:\Program Files\National Instruments\LabVIEW 2014\vi.lib\ActorFramework\Actor
+из папки Fixed AF VIs
