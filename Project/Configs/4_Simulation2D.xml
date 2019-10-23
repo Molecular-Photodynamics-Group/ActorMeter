@@ -1,7 +1,7 @@
 <configuration>
 	<info>
 		<name>Simulation 2D</name>
-		<description></description>
+		<description>Simulated Videocamera and ParameterDevice</description>
 	</info>
 	<devices>
 		<readout>Simulated Videocamera</readout>

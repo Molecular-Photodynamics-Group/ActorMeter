@@ -206,6 +206,7 @@
 					<Item Name="ParameterDevice" Type="Folder">
 						<Item Name="SolarSystems M266" Type="Folder">
 							<Item Name="SolarSystems M266.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems M266.lvclass"/>
+							<Item Name="SDK_LV_VI_x64.llb" Type="Document" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb"/>
 						</Item>
 						<Item Name="Stepper3D" Type="Folder">
 							<Item Name="Stepper3D Messages" Type="Folder">
@@ -214,6 +215,9 @@
 							</Item>
 							<Item Name="Stepper3D.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/Stepper3D/Stepper3D.lvclass"/>
 							<Item Name="Stepper3D.lvlib" Type="Library" URL="../../Libs/stepper3D.lib/stepper3D.lvlib"/>
+						</Item>
+						<Item Name="SolarSystems M266 Old" Type="Folder">
+							<Item Name="SolarSystems M266 Old.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/SolarSystems M266 Old.lvclass"/>
 						</Item>
 					</Item>
 				</Item>
@@ -227,15 +231,18 @@
 			</Item>
 			<Item Name="Registry" Type="Folder">
 				<Item Name="Get path from registry.vi" Type="VI" URL="../Loader/Get path from registry.vi"/>
-				<Item Name="Load registry.vi" Type="VI" URL="../Config/Load registry.vi"/>
+				<Item Name="Load registry.vi" Type="VI" URL="../Loader/Load registry.vi"/>
 				<Item Name="Registry.ctl" Type="VI" URL="../Loader/Registry.ctl"/>
 			</Item>
 			<Item Name="Load actor by relative path.vi" Type="VI" URL="../Loader/Load actor by relative path.vi"/>
 			<Item Name="Load actor from configuration.vi" Type="VI" URL="../Loader/Load actor from configuration.vi"/>
+			<Item Name="Get project path.vi" Type="VI" URL="../Loader/Get project path.vi"/>
+			<Item Name="Get registry path.vi" Type="VI" URL="../Loader/Get registry path.vi"/>
 		</Item>
 		<Item Name="Observable Actor.lvlib" Type="Library" URL="../Framework/Interfaces/Observable Actor/Observable Actor.lvlib"/>
 		<Item Name="Viewable Actor.lvlib" Type="Library" URL="../Framework/Interfaces/Viewable Actor/Viewable Actor.lvlib"/>
 		<Item Name="Pipelined Actor.lvlib" Type="Library" URL="../Framework/Interfaces/Pipelined Actor/Pipelined Actor.lvlib"/>
+		<Item Name="Launcher2.0.vi" Type="VI" URL="../../Launcher2.0.vi"/>
 		<Item Name="Launcher.vi" Type="VI" URL="../../Launcher.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -356,6 +363,7 @@
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="WebSockets.lvlib" Type="Library" URL="/&lt;vilib&gt;/MediaMongrels Ltd/WebSockets/WebSockets/WebSockets.lvlib"/>
+				<Item Name="Monitor Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/MGI/Monitored Actor/Monitor Data/Monitor Data.lvclass"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="ivi.dll" Type="Document" URL="ivi.dll">
@@ -388,9 +396,6 @@
 			<Item Name="sls_GetGratingCount.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_GetGratingCount.vi"/>
 			<Item Name="sls_GetCalibration.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_GetCalibration.vi"/>
 			<Item Name="sls_GetPxlCalibration.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_GetPxlCalibration.vi"/>
-			<Item Name="IviScope_64.dll" Type="Document" URL="IviScope_64.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="wlmData.dll" Type="Document" URL="wlmData.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -399,6 +404,26 @@
 			<Item Name="ReadAll.vi" Type="VI" URL="../../Libs/stepper3D.lib/Low-level/ReadAll.vi"/>
 			<Item Name="SendCommand.vi" Type="VI" URL="../../Libs/stepper3D.lib/Low-level/SendCommand.vi"/>
 			<Item Name="ConvertPostionsToString.vi" Type="VI" URL="../../Libs/stepper3D.lib/Low-level/ConvertPostionsToString.vi"/>
+			<Item Name="IviScope.dll" Type="Document" URL="IviScope.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="M266_WaitForEndOperation.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_WaitForEndOperation.vi"/>
+			<Item Name="M266_GetStatus.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetStatus.vi"/>
+			<Item Name="InstrumentManipulator.dll" Type="Document" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/InstrumentManipulator.dll"/>
+			<Item Name="M266_GetWL.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetWL.vi"/>
+			<Item Name="M266_GetMirror.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetMirror.vi"/>
+			<Item Name="M266_GetFilter.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetFilter.vi"/>
+			<Item Name="M266_GetShutterState.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetShutterState.vi"/>
+			<Item Name="M266_GetDispersion.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetDispersion.vi"/>
+			<Item Name="M266_GetSlitWidth.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetSlitWidth.vi"/>
+			<Item Name="M266_SetWL.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_SetWL.vi"/>
+			<Item Name="M266_SetSlitWidth.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_SetSlitWidth.vi"/>
+			<Item Name="M266_SetMirror.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_SetMirror.vi"/>
+			<Item Name="M266_SetFilter.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_SetFilter.vi"/>
+			<Item Name="M266_SetShutterState.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_SetShutterState.vi"/>
+			<Item Name="M266_GetError.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetError.vi"/>
+			<Item Name="M266_Init.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_Init.vi"/>
+			<Item Name="M266_Final.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_Final.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

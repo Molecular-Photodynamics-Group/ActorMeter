@@ -1,7 +1,7 @@
 <configuration>
 	<info>
 		<name>Videoscan</name>
-		<description></description>
+		<description>Videoscan and Wavelength Setter</description>
 	</info>
 	<devices>
 		<readout>Videoscan</readout>

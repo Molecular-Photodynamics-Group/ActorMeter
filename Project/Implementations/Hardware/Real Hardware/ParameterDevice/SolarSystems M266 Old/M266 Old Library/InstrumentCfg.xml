@@ -1,0 +1,385 @@
+<?xml version="1.0"?>
+<Configuration>
+	<Instrument Name="M266-4" SerialNum="140308-00-00-00000-001-01-00348" Type="SPECTRAL">
+		<Plagins>
+			<Plagin Name="sls_si_ctrl" PathName="sls_si_ctrl_bk.dll" Param="M266"/>
+			<Plagin Name="sls_si_calc" PathName="sls_si_calc.dll" Param="M266"/>
+		</Plagins>
+		<Connections>
+			<Connection Name="connUsb">
+				<CNPrm Name="DispName" Value="Connection"/>
+				<CNPrm Name="Params" Value="Port=USB;Port=USB;ID=190606-00-00-00000-001-01-00341;Port=USB;Port=USB;ID=070607-00-00-00000-001-01-00342;Port=USB;Port=USB;ID=190606-00-00-00000-001-01-00341;Port=USB;Port=USB;ID=250607-00-00-00000-001-01-00343;Port=USB;Port=USB;ID=190606-00-00-00000-001-01-00341;Port=USB;Port=USB;ID=070607-00-00-00000-001-01-00342;Port=USB;Port=USB;ID=190606-00-00-00000-001-01-00341;Port=USB;Port=USB;ID=250607-00-00-00000-001-01-00343;Port=USB;Port=USB;ID=190606-00-00-00000-001-01-00341;Port=USB;Port=USB;ID=070607-00-00-00000-001-01-00342;Port=USB;Port=USB;ID=190606-00-00-00000-001-01-00341;Port=USB;Port=USB;ID=140308-00-00-00000-001-01-00348"/>
+				<CNPrm Name="ConnectPlagin" Value="sls_si_ctrl"/>
+			</Connection>
+		</Connections>
+		<Devices>
+			<Device Name="DGrating">
+				<DPrm Name="ID" Value="6"/>
+				<DPrm Name="DispName" Value="Grating"/>
+				<DPrm Name="ResetValue" Value="0"/>
+				<DPrm Name="ControlPlagin" Value="sls_si_ctrl"/>
+				<DPrm Name="MaxValue" Value="0"/>
+				<DPrm Name="Backlash" Value="1000"/>
+				<DPrm Name="AdjustmentBacklash" Value="yes"/>
+				<DPrm Name="StepTimeOut" Value="0"/><DPrm Name="ResetTimeOut" Value="0"/><DPrm Name="CommandRpt" Value="0"/><DPrm Name="DoCommandRpt" Value="no"/><DPrm Name="DoStepTimeOut" Value="no"/></Device>
+			<Device Name="DTurret">
+				<DPrm Name="ID" Value="5"/>
+				<DPrm Name="DispName" Value="Turret"/>
+				<DPrm Name="ResetValue" Value="0"/>
+				<DPrm Name="ControlPlagin" Value="sls_si_ctrl"/>
+				<DPrm Name="MaxValue" Value="0"/>
+				<DPrm Name="Backlash" Value="0"/>
+				<DPrm Name="AdjustmentBacklash" Value="no"/>
+				<DPrm Name="StepTimeOut" Value="0"/><DPrm Name="ResetTimeOut" Value="0"/><DPrm Name="CommandRpt" Value="0"/><DPrm Name="DoCommandRpt" Value="no"/><DPrm Name="DoStepTimeOut" Value="no"/></Device>
+			<Device Name="DSlit1">
+				<DPrm Name="ID" Value="2"/>
+				<DPrm Name="DispName" Value="Entrance slit"/>
+				<DPrm Name="ResetValue" Value="0"/>
+				<DPrm Name="ControlPlagin" Value="sls_si_ctrl"/>
+				<DPrm Name="MaxValue" Value="0"/>
+				<DPrm Name="Backlash" Value="0"/>
+				<DPrm Name="AdjustmentBacklash" Value="no"/>
+				<DPrm Name="StepTimeOut" Value="0"/><DPrm Name="ResetTimeOut" Value="0"/><DPrm Name="CommandRpt" Value="0"/><DPrm Name="DoCommandRpt" Value="no"/><DPrm Name="DoStepTimeOut" Value="no"/></Device>
+			<Device Name="DSlit2">
+				<DPrm Name="ID" Value="1"/>
+				<DPrm Name="DispName" Value="Exit slit"/>
+				<DPrm Name="ResetValue" Value="0"/>
+				<DPrm Name="ControlPlagin" Value="sls_si_ctrl"/>
+				<DPrm Name="MaxValue" Value="0"/>
+				<DPrm Name="Backlash" Value="0"/>
+				<DPrm Name="AdjustmentBacklash" Value="no"/>
+				<DPrm Name="StepTimeOut" Value="0"/><DPrm Name="ResetTimeOut" Value="0"/><DPrm Name="CommandRpt" Value="0"/><DPrm Name="DoCommandRpt" Value="no"/><DPrm Name="DoStepTimeOut" Value="no"/></Device>
+			<Device Name="DMirror">
+				<DPrm Name="ID" Value="7"/>
+				<DPrm Name="DispName" Value="Mirror"/>
+				<DPrm Name="ResetValue" Value="0"/>
+				<DPrm Name="ControlPlagin" Value="sls_si_ctrl"/>
+				<DPrm Name="MaxValue" Value="0"/>
+				<DPrm Name="Backlash" Value="0"/>
+				<DPrm Name="AdjustmentBacklash" Value="no"/>
+				<DPrm Name="StepTimeOut" Value="0"/><DPrm Name="ResetTimeOut" Value="0"/><DPrm Name="CommandRpt" Value="0"/><DPrm Name="DoCommandRpt" Value="no"/><DPrm Name="DoStepTimeOut" Value="no"/></Device>
+			<Device Name="DFilter">
+				<DPrm Name="ID" Value="3"/>
+				<DPrm Name="DispName" Value="Filter"/>
+				<DPrm Name="ResetValue" Value="0"/>
+				<DPrm Name="ControlPlagin" Value="sls_si_ctrl"/>
+				<DPrm Name="MaxValue" Value="0"/>
+				<DPrm Name="Backlash" Value="0"/>
+				<DPrm Name="AdjustmentBacklash" Value="no"/>
+				<DPrm Name="StepTimeOut" Value="0"/><DPrm Name="ResetTimeOut" Value="0"/><DPrm Name="CommandRpt" Value="0"/><DPrm Name="DoCommandRpt" Value="no"/><DPrm Name="DoStepTimeOut" Value="no"/></Device>
+			<Device Name="DShutter">
+				<DPrm Name="ID" Value="4"/>
+				<DPrm Name="DispName" Value="Shutter"/>
+				<DPrm Name="ResetValue" Value="0"/>
+				<DPrm Name="ControlPlagin" Value="sls_si_ctrl"/>
+				<DPrm Name="MaxValue" Value="0"/>
+				<DPrm Name="Backlash" Value="0"/>
+				<DPrm Name="AdjustmentBacklash" Value="no"/>
+				<DPrm Name="StepTimeOut" Value="0"/><DPrm Name="ResetTimeOut" Value="0"/><DPrm Name="CommandRpt" Value="0"/><DPrm Name="DoCommandRpt" Value="no"/><DPrm Name="DoStepTimeOut" Value="no"/></Device>
+		</Devices>
+		<OpticalItems>
+			<Item Name="IGrating1" Type="GRATING">
+				<IPrm Name="DispName" Value="Grating 1"/>
+				<IPrm Name="Device" Value="DGrating"/>
+				<IPrm Name="ResetValue" Value="-3428"/>
+				<IPrm Name="CurValue" Value="63004"/>
+				<IPrm Name="BaseUnit" Value="nm"/>
+				<IPrm Name="Calibration" Value="MixClbr1"/>
+				<IPrm Name="Grooves" Value="1800"/>
+				<IPrm Name="BazeAngle" Value="270"/>
+				<IPrm Name="Tetta2" Value="9"/>
+				<IPrm Name="StepSize" Value="0.3125"/>
+				<IPrm Name="Radius" Value="34.575"/>
+				<IPrm Name="Focus" Value="283.1"/>
+				<IPrm Name="MinWL" Value="0"/>
+				<IPrm Name="MaxWL" Value="600"/>
+				<IPrm Name="OffsetAngle" Value="0.2"/>
+				<ICalibrations>
+					<ICalibration Name="PrmClbr1" Type="Custom">
+						<ICPrm Name="CalcPlagin" Value="sls_si_calc"/>
+					</ICalibration>
+					<ICalibration Name="TblClbr1" Type="Table">
+						<ICTRow Col1="0" Col2="0"/><ICTRow Col1="253.652" Col2="26288"/><ICTRow Col1="296.728" Col2="31080"/><ICTRow Col1="302.15" Col2="31694"/><ICTRow Col1="312.567" Col2="32880"/><ICTRow Col1="334.148" Col2="35380"/><ICTRow Col1="365.0153" Col2="39036"/><ICTRow Col1="404.6563" Col2="43902"/><ICTRow Col1="435.833" Col2="47896"/><ICTRow Col1="507.304" Col2="57708"/><ICTRow Col1="546.073" Col2="63508"/><ICTRow Col1="576.96" Col2="68424"/></ICalibration>
+					<ICalibration Name="MixClbr1" Type="Mixed">
+						<ICPrm Name="MainClbr" Value="PrmClbr1"/>
+						<ICPrm Name="CorrClbr" Value="TblClbr1"/>
+					</ICalibration>
+				</ICalibrations>
+				<IPrm Name="ParameterMeaning" Value="Incremetn"/>
+				<IPrm Name="RewindValue" Value="5"/>
+				<IPrm Name="SelMinWL" Value="180"/>
+				<IPrm Name="SelMaxWL" Value="500"/>
+				<IPrm Name="LeverArm" Value="0"/>
+				<IPrm Name="WL0" Value="0"/><IPrm Name="WL1" Value="0"/><IPrm Name="WLStepSize" Value="0"/><IPrm Name="WLTimeOut" Value="0"/></Item>
+			<Item Name="IGrating2" Type="GRATING">
+				<IPrm Name="DispName" Value="Grating 2"/>
+				<IPrm Name="Device" Value="DGrating"/>
+				<IPrm Name="ResetValue" Value="-2763"/>
+				<IPrm Name="CurValue" Value="63669"/>
+				<IPrm Name="BaseUnit" Value="nm"/>
+				<IPrm Name="Calibration" Value="MixClbr2"/>
+				<IPrm Name="Grooves" Value="1200"/>
+				<IPrm Name="BazeAngle" Value="400"/>
+				<IPrm Name="Tetta2" Value="9"/>
+				<IPrm Name="StepSize" Value="0.313"/>
+				<IPrm Name="Radius" Value="34.5665"/>
+				<IPrm Name="Focus" Value="283.1"/>
+				<IPrm Name="MinWL" Value="0"/>
+				<IPrm Name="MaxWL" Value="900"/>
+				<IPrm Name="OffsetAngle" Value="-0.1"/>
+				<ICalibrations>
+					<ICalibration Name="TblClbr2" Type="Table">
+						<ICTRow Col1="0" Col2="0"/><ICTRow Col1="253.652" Col2="17238"/><ICTRow Col1="296.728" Col2="20256"/><ICTRow Col1="312.567" Col2="21372"/><ICTRow Col1="334.148" Col2="22912"/><ICTRow Col1="365.015" Col2="25128"/><ICTRow Col1="404.656" Col2="28014"/><ICTRow Col1="435.833" Col2="30326"/><ICTRow Col1="507.304" Col2="35778"/><ICTRow Col1="546.073" Col2="38836"/><ICTRow Col1="576.96" Col2="41324"/><ICTRow Col1="625.134" Col2="45320"/><ICTRow Col1="668.296" Col2="49040"/><ICTRow Col1="696.543" Col2="51546"/><ICTRow Col1="730.0306" Col2="54606"/><ICTRow Col1="760.956" Col2="57522"/><ICTRow Col1="809.3126" Col2="62290"/><ICTRow Col1="871.666" Col2="68854"/></ICalibration>
+					<ICalibration Name="PrmClbr2" Type="Custom">
+						<ICPrm Name="CalcPlagin" Value="sls_si_calc"/>
+					</ICalibration>
+					<ICalibration Name="MixClbr2" Type="Mixed">
+						<ICPrm Name="MainClbr" Value="PrmClbr2"/>
+						<ICPrm Name="CorrClbr" Value="TblClbr2"/>
+					</ICalibration>
+				</ICalibrations>
+				<IPrm Name="ParameterMeaning" Value="Incremetn"/>
+				<IPrm Name="RewindValue" Value="5"/>
+				<IPrm Name="SelMinWL" Value="500"/>
+				<IPrm Name="SelMaxWL" Value="800"/>
+				<IPrm Name="LeverArm" Value="0"/>
+				<IPrm Name="WL0" Value="0"/><IPrm Name="WL1" Value="0"/><IPrm Name="WLStepSize" Value="0"/><IPrm Name="WLTimeOut" Value="0"/></Item>
+			<Item Name="IGrating3" Type="GRATING">
+				<IPrm Name="DispName" Value="Grating 3"/>
+				<IPrm Name="Device" Value="DGrating"/>
+				<IPrm Name="ResetValue" Value="-3628"/>
+				<IPrm Name="CurValue" Value="62804"/>
+				<IPrm Name="BaseUnit" Value="nm"/>
+				<IPrm Name="Calibration" Value="MixClbr3"/>
+				<IPrm Name="Grooves" Value="900"/>
+				<IPrm Name="BazeAngle" Value="600"/>
+				<IPrm Name="Tetta2" Value="9"/>
+				<IPrm Name="StepSize" Value="0.3125"/>
+				<IPrm Name="Radius" Value="34.5518"/>
+				<IPrm Name="Focus" Value="283.1"/>
+				<IPrm Name="MinWL" Value="0"/>
+				<IPrm Name="MaxWL" Value="1210"/>
+				<IPrm Name="OffsetAngle" Value="0.41"/>
+				<ICalibrations>
+					<ICalibration Name="TblClbr3" Type="Table">
+						<ICTRow Col1="0" Col2="0"/><ICTRow Col1="253.652" Col2="12878"/><ICTRow Col1="365.015" Col2="18672"/><ICTRow Col1="507.304" Col2="26300"/><ICTRow Col1="546.073" Col2="28436"/><ICTRow Col1="579.066" Col2="30280"/><ICTRow Col1="625.134" Col2="32898"/><ICTRow Col1="668.296" Col2="35400"/><ICTRow Col1="696.543" Col2="37058"/><ICTRow Col1="730.0306" Col2="39056"/><ICTRow Col1="760.956" Col2="40934"/><ICTRow Col1="809.3126" Col2="43932"/><ICTRow Col1="871.666" Col2="47934"/><ICTRow Col1="937.701" Col2="52350"/><ICTRow Col1="1014.608" Col2="57766"/><ICTRow Col1="1092.146" Col2="63576"/></ICalibration>
+					<ICalibration Name="PrmClbr3" Type="Custom">
+						<ICPrm Name="CalcPlagin" Value="sls_si_calc"/>
+					</ICalibration>
+					<ICalibration Name="MixClbr3" Type="Mixed">
+						<ICPrm Name="MainClbr" Value="PrmClbr3"/>
+						<ICPrm Name="CorrClbr" Value="TblClbr3"/>
+					</ICalibration>
+				</ICalibrations>
+				<IPrm Name="ParameterMeaning" Value="Incremetn"/>
+				<IPrm Name="RewindValue" Value="5"/>
+				<IPrm Name="SelMinWL" Value="800"/>
+				<IPrm Name="SelMaxWL" Value="1200"/>
+				<IPrm Name="LeverArm" Value="0"/>
+				<IPrm Name="WL0" Value="0"/><IPrm Name="WL1" Value="0"/><IPrm Name="WLStepSize" Value="0"/><IPrm Name="WLTimeOut" Value="0"/></Item>
+			<Item Name="IGrating4" Type="GRATING">
+				<IPrm Name="DispName" Value="Grating 4"/>
+				<IPrm Name="Device" Value="DGrating"/>
+				<IPrm Name="ResetValue" Value="-2994"/>
+				<IPrm Name="CurValue" Value="63438"/>
+				<IPrm Name="BaseUnit" Value="nm"/>
+				<IPrm Name="Calibration" Value="MixClbr4"/>
+				<IPrm Name="Grooves" Value="300"/>
+				<IPrm Name="BazeAngle" Value="1500"/>
+				<IPrm Name="Tetta2" Value="9"/>
+				<IPrm Name="StepSize" Value="0.3125"/>
+				<IPrm Name="Radius" Value="34.6001"/>
+				<IPrm Name="Focus" Value="283.1"/>
+				<IPrm Name="MinWL" Value="0"/>
+				<IPrm Name="MaxWL" Value="3610"/>
+				<IPrm Name="OffsetAngle" Value="-0.1"/>
+				<ICalibrations>
+					<ICalibration Name="TblClbr4" Type="Table">
+						<ICTRow Col1="0" Col2="0"/><ICTRow Col1="253.652" Col2="4264"/><ICTRow Col1="507.304" Col2="8548"/><ICTRow Col1="760.956" Col2="12868"/><ICTRow Col1="871.666" Col2="14772"/><ICTRow Col1="1014.608" Col2="17246"/><ICTRow Col1="1268.26" Col2="21706"/><ICTRow Col1="1307.499" Col2="22400"/><ICTRow Col1="1521.912" Col2="26264"/><ICTRow Col1="1638.219" Col2="28394"/><ICTRow Col1="1743.332" Col2="30348"/><ICTRow Col1="1775.564" Col2="30952"/><ICTRow Col1="2029.216" Col2="35810"/><ICTRow Col1="2179.165" Col2="38866"/><ICTRow Col1="2282.868" Col2="40848"/><ICTRow Col1="2536.52" Col2="46130"/><ICTRow Col1="2614.998" Col2="47820"/><ICTRow Col1="2790.172" Col2="51690"/><ICTRow Col1="3043.824" Col2="57768"/><ICTRow Col1="3486.664" Col2="68920"/></ICalibration>
+					<ICalibration Name="PrmClbr4" Type="Custom">
+						<ICPrm Name="CalcPlagin" Value="sls_si_calc"/>
+					</ICalibration>
+					<ICalibration Name="MixClbr4" Type="Mixed">
+						<ICPrm Name="MainClbr" Value="PrmClbr4"/>
+						<ICPrm Name="CorrClbr" Value="TblClbr4"/>
+					</ICalibration>
+				</ICalibrations>
+				<IPrm Name="ParameterMeaning" Value="Incremetn"/>
+				<IPrm Name="RewindValue" Value="5"/>
+				<IPrm Name="SelMinWL" Value="1200"/>
+				<IPrm Name="SelMaxWL" Value="3600"/>
+				<IPrm Name="LeverArm" Value="0"/>
+				<IPrm Name="WL0" Value="0"/><IPrm Name="WL1" Value="0"/><IPrm Name="WLStepSize" Value="0"/><IPrm Name="WLTimeOut" Value="0"/></Item>
+			<Item Name="ITurret1" Type="TURRET">
+				<IPrm Name="DispName" Value="Change of gratings"/>
+				<IPrm Name="Device" Value="DTurret"/>
+				<IPrm Name="ResetValue" Value="0"/>
+				<IPrm Name="CurValue" Value="38905"/>
+				<IPrm Name="SelectedGrating" Value="3"/>
+				<IGratings>
+					<IGrating Name="IGrating1" StateInd="0"/>
+					<IGrating Name="IGrating2" StateInd="1"/>
+					<IGrating Name="IGrating3" StateInd="2"/>
+					<IGrating Name="IGrating4" StateInd="3"/>
+				</IGratings>
+				<IStates>
+					<IState Index="0" Name="Gr1" Value="2880"/><IState Index="1" Name="Gr2" Value="14911"/><IState Index="2" Name="Gr3" Value="26899"/><IState Index="3" Name="Gr4" Value="38905"/></IStates>
+				<IPrm Name="ParameterMeaning" Value="Incremetn"/>
+			</Item>
+			<Item Name="IMirror1" Type="MULTISTABLE">
+				<IPrm Name="DispName" Value="Mirror"/>
+				<IPrm Name="Device" Value="DMirror"/>
+				<IPrm Name="ResetValue" Value="0"/>
+				<IPrm Name="CurValue" Value="5046"/>
+				<IStates>
+					<IState Index="0" Name="Axial port" Value="0"/><IState Index="1" Name="Lateral port" Value="5046"/></IStates>
+				<IPrm Name="ParameterMeaning" Value="Incremetn"/>
+			</Item>
+			<Item Name="IFilter1" Type="FILTER">
+				<IPrm Name="DispName" Value="Filter"/>
+				<IPrm Name="Device" Value="DFilter"/>
+				<IPrm Name="ResetValue" Value="0"/>
+				<IPrm Name="CurValue" Value="7450"/>
+				<IStates>
+					<IState Index="0" Name="Filter 1" Value="150"/><IState Index="1" Name="Filter 2" Value="2700"/><IState Index="2" Name="Filter 3" Value="5080"/><IState Index="3" Name="Filter 4" Value="7450"/><IState Index="4" Name="Filter 5" Value="9870"/><IState Index="5" Name="Filter 6" Value="12250"/><IState Index="6" Name="Filter 7" Value="14620"/><IState Index="7" Name="Filter 8" Value="16950"/></IStates>
+				<WLRanges>
+					<WLRange StateInd="0" Min="180" Max="350"/><WLRange StateInd="1" Min="350" Max="560"/><WLRange StateInd="2" Min="560" Max="700"/><WLRange StateInd="3" Min="0" Max="0"/><WLRange StateInd="4" Min="700" Max="1120"/><WLRange StateInd="5" Min="1120" Max="1380"/><WLRange StateInd="6" Min="0" Max="0"/><WLRange StateInd="7" Min="1380" Max="1620"/></WLRanges>
+				<IPrm Name="ParameterMeaning" Value="Incremetn"/>
+			</Item>
+			<Item Name="ISlit1" Type="SLIT">
+				<IPrm Name="DispName" Value="Entrance slit"/>
+				<IPrm Name="Device" Value="DSlit1"/>
+				<IPrm Name="ResetValue" Value="-1122"/>
+				<IPrm Name="CurValue" Value="160"/>
+				<IPrm Name="BaseUnit" Value="nm"/>
+				<IPrm Name="Calibration" Value="SltClbr1"/>
+				<IPrm Name="StepSize" Value="0.125"/>
+				<ICalibrations>
+					<_ICalibration Name="LineCbr1" Type="Line"/>
+					<ICalibration Name="SltClbr1" Type="Custom">
+						<ICPrm Name="CalcPlagin" Value="sls_si_calc"/>
+					</ICalibration>
+				</ICalibrations>
+				<IPrm Name="ParameterMeaning" Value="Incremetn"/>
+				<IPrm Name="RewindValue" Value="5"/>
+			</Item>
+			<Item Name="ISlit2" Type="SLIT">
+				<IPrm Name="DispName" Value="Exit slit"/>
+				<IPrm Name="Device" Value="DSlit2"/>
+				<IPrm Name="ResetValue" Value="-870"/>
+				<IPrm Name="CurValue" Value="16000"/>
+				<IPrm Name="BaseUnit" Value="nm"/>
+				<IPrm Name="Calibration" Value="SltClbr2"/>
+				<IPrm Name="StepSize" Value="0.125"/>
+				<ICalibrations>
+					<ICalibration Name="LineCbr2" Type="Line"/>
+					<ICalibration Name="SltClbr2" Type="Custom">
+						<ICPrm Name="CalcPlagin" Value="sls_si_calc"/>
+					</ICalibration>
+				</ICalibrations>
+				<IPrm Name="ParameterMeaning" Value="Incremetn"/>
+				<IPrm Name="RewindValue" Value="5"/>
+			</Item>
+			<Item Name="IShutter1" Type="BISTABLE">
+				<IPrm Name="DispName" Value="Shutter"/>
+				<IPrm Name="Device" Value="DShutter"/>
+				<IPrm Name="ResetValue" Value="0"/>
+				<IPrm Name="CurValue" Value="0"/>
+				<IStates>
+					<IState Index="0" Name="Open" Value="0"/><IState Index="1" Name="Close" Value="40"/></IStates>
+				<IPrm Name="ParameterMeaning" Value="Incremetn"/>
+			</Item>
+		</OpticalItems>
+		<WLCtrlItems>
+			<WLCItem Name="WLCtrl1">
+				<WLCPrm Name="DispName" Value="Wavelength"/>
+				<WLCPrm Name="AutoSelGrating" Value="no"/>
+				<WLCPrm Name="AutoSelFilter" Value="no"/>
+				<WLCPrm Name="AutoCloseShutter" Value="no"/>
+				<WLCPrm Name="Turret" Value="ITurret1"/>
+				<WLCPrm Name="Grating" Value=""/>
+				<WLCPrm Name="Slit" Value=""/>
+				<WLCPrm Name="Filter" Value="IFilter1"/>
+				<WLCPrm Name="Shutter" Value="IShutter1"/>
+				<WLCPrm Name="CalcPlagin" Value="sls_si_calc"/>
+				<CalculatedValues/>
+			</WLCItem>
+		</WLCtrlItems>
+		<ItemGroupStates>
+			<IGState ID="0">
+				<ISt Item="IShutter1" Value="0"/>
+				<ISt Item="IMirror1" Value="0"/>
+			</IGState>
+			<IGState ID="1">
+				<ISt Item="IShutter1" Value="0"/>
+				<ISt Item="IMirror1" Value="1"/>
+			</IGState>
+			<IGState ID="2">
+				<ISt Item="IShutter1" Value="1"/>
+				<ISt Item="IMirror1" Value="0"/>
+			</IGState>
+			<IGState ID="3">
+				<ISt Item="IShutter1" Value="1"/>
+				<ISt Item="IMirror1" Value="1"/>
+			</IGState>
+		</ItemGroupStates>
+		<Errors/></Instrument>
+	<Viewers>
+		<DeviceViewers>
+			<DViewer Name="DV_GRATING" Item="WLCtrl1" Type="STEPDRV_GR" GroupOrder="1"/>
+			<DViewer Name="DV_TURRET" Item="ITurret1" Type="STEPDRV" GroupOrder="1"/>
+			<DViewer Name="DV_SLIT1" Item="ISlit1" Type="STEPDRV" GroupOrder="3"/>
+			<DViewer Name="DV_SLIT2" Item="ISlit2" Type="STEPDRV" GroupOrder="3"/>
+			<DViewer Name="DV_MIRROR" Item="IMirror1" Type="STEPDRV" GroupOrder="4"/>
+			<DViewer Name="DV_FILTER" Item="IFilter1" Type="STEPDRV" GroupOrder="4"/>
+			<DViewer Name="DV_SHUTTER" Item="IShutter1" Type="STEPDRV" GroupOrder="5"/>
+		</DeviceViewers>
+		<OpticItemViewers>
+			<OIViewer Name="OIV_WL" Type="WLCTRL" GroupOrder="1" Item="WLCtrl1"/>
+			<OIViewer Name="OIV_SLIT1" Type="SLIT" GroupOrder="2" Item="ISlit1"/>
+			<OIViewer Name="OIV_SLIT2" Type="SLIT" GroupOrder="3" Item="ISlit2"/>
+			<OIViewer Name="OIV_MIRROR" Type="MULTISTABLE" GroupOrder="4" Item="IMirror1"/>
+			<OIViewer Name="OIV_FILTER" Type="FILTER" GroupOrder="5" Item="IFilter1"/>
+			<OIViewer Name="OIV_SHUTTER" Type="BISTABLE" GroupOrder="6" Item="IShutter1"/>
+		</OpticItemViewers>
+		<ConfigViewers/>
+	</Viewers>
+	<InstrumentWnd>
+		<IWnd Left="188" Top="-1" Type="WORK"><IWViewer Name="OIV_WL"/><IWViewer Name="OIV_SLIT1"/><IWViewer Name="OIV_SLIT2"/><IWViewer Name="OIV_MIRROR"/><IWViewer Name="OIV_FILTER"/><IWViewer Name="OIV_SHUTTER"/></IWnd></InstrumentWnd>
+	<ConfigStructure>
+		<CSWLCtrls DispName="General">
+			<CSWLCtrl Name="WLCtrl1" DispName="General"/>
+		</CSWLCtrls>
+		<CSConnections DispName="Connections">
+			<CSConnection Name="connUsb" DispName=""/>
+		</CSConnections>
+		<CSGratings DispName="Gratings">
+			<CSGrating Name="IGrating1" DispName=""/>
+			<CSGrating Name="IGrating2" DispName=""/>
+			<CSGrating Name="IGrating3" DispName=""/>
+			<CSGrating Name="IGrating4" DispName=""/>
+		</CSGratings>
+		<CSTurrets DispName="Turrets">
+			<CSTurret Name="ITurret1" DispName="Turret"/>
+		</CSTurrets>
+		<CSSlits DispName="Slits">
+			<CSSlit Name="ISlit1" DispName=""/>
+			<CSSlit Name="ISlit2" DispName=""/>
+		</CSSlits>
+		<CSMirrors DispName="Mirrors">
+			<CSMirror Name="IMirror1" DispName=""/>
+		</CSMirrors>
+		<CSFilters DispName="Filters">
+			<CSFilter Name="IFilter1" DispName=""/>
+		</CSFilters>
+		<CSShutters DispName="Shutters">
+			<CSShutter Name="IShutter1" DispName=""/>
+		</CSShutters>
+	</ConfigStructure>
+	<Layouts>
+		<Layout IGStateID="0" ImageFile="M266.tif" ImageIndex="4"/>
+		<Layout IGStateID="1" ImageFile="M266.tif" ImageIndex="5"/>
+		<Layout IGStateID="2" ImageFile="M266.tif" ImageIndex="6"/>
+		<Layout IGStateID="3" ImageFile="M266.tif" ImageIndex="7"/>
+	</Layouts>
+</Configuration>

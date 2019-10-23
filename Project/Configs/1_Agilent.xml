@@ -1,11 +1,11 @@
 <configuration>
 	<info>
-		<name>Simulation 1D</name>
-		<description></description>
+		<name>Agilent</name>
+		<description>Agilent and Wavelength Setter</description>
 	</info>
 	<devices>
-		<readout>Simulated Oscilloscope</readout>
-		<parameter>Simulated ParameterDevice</parameter>
+		<readout>Agilent DSO-X 3032A</readout>
+		<parameter>Wavelength Setter</parameter>
 	</devices>
 	<pipeline>
 		<processor>AbstractProcessor1D</processor>
