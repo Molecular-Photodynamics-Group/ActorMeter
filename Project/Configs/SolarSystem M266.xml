@@ -1,11 +1,11 @@
 <configuration>
 	<info>
-		<name>Agilent</name>
-		<description>Agilent and Wavelength Setter</description>
+		<name>SolarSystem M266</name>
+		<description>Agilent and SolarSystem M266</description>
 	</info>
 	<devices>
 		<readout>Agilent DSO-X 3032A</readout>
-		<parameter>Wavelength Setter</parameter>
+		<parameter>SolarSystems M266</parameter>
 	</devices>
 	<pipeline>
 		<processor>AbstractProcessor1D</processor>

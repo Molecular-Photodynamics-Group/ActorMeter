@@ -1,0 +1,15 @@
+<configuration>
+	<info>
+		<name>Agilent</name>
+		<description>Agilent and Stepper3D</description>
+	</info>
+	<devices>
+		<readout>Agilent DSO-X 3032A</readout>
+		<parameter>Stepper3D</parameter>
+	</devices>
+	<pipeline>
+		<processor>AbstractProcessor1D</processor>
+		<collector>AverageCollector1D</collector>
+		<extractor>MassSpectrumExtractor</extractor>
+	</pipeline>
+</configuration>

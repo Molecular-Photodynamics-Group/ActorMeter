@@ -1,0 +1,15 @@
+<configuration>
+	<info>
+		<name>Videoscan</name>
+		<description>Videoscan and Stepper3D</description>
+	</info>
+	<devices>
+		<readout>Videoscan</readout>
+		<parameter>Stepper3D</parameter>
+	</devices>
+	<pipeline>
+		<processor>AbstractProcessor2D</processor>
+		<collector>AverageCollector2D</collector>
+		<extractor>ImagingExtractor</extractor>
+	</pipeline>
+</configuration>

@@ -1,0 +1,15 @@
+<configuration>
+	<info>
+		<name>Agilent without Stepper</name>
+		<description>Agilent and Simulated ParameterDevice</description>
+	</info>
+	<devices>
+		<readout>Agilent DSO-X 3032A</readout>
+		<parameter>Simulated ParameterDevice</parameter>
+	</devices>
+	<pipeline>
+		<processor>AbstractProcessor1D</processor>
+		<collector>AverageCollector1D</collector>
+		<extractor>MassSpectrumExtractor</extractor>
+	</pipeline>
+</configuration>

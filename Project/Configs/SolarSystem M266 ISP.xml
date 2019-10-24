@@ -1,0 +1,15 @@
+<configuration>
+	<info>
+		<name>SolarSystem M266 ISP</name>
+		<description>Agilent and SolarSystem M266 for ISP</description>
+	</info>
+	<devices>
+		<readout>Agilent DSO-X 3032A</readout>
+		<parameter>SolarSystems M266 Old</parameter>
+	</devices>
+	<pipeline>
+		<processor>AbstractProcessor1D</processor>
+		<collector>AverageCollector1D</collector>
+		<extractor>MassSpectrumExtractor</extractor>
+	</pipeline>
+</configuration>

@@ -135,94 +135,6 @@
 				<Item Name="Data Msg.lvclass" Type="LVClass" URL="../Framework/Model/Data Msg/Data Msg.lvclass"/>
 			</Item>
 		</Item>
-		<Item Name="Implementations" Type="Folder">
-			<Item Name="Processor" Type="Folder">
-				<Item Name="ThresholdProcessor1D" Type="Folder">
-					<Item Name="Messages" Type="Folder">
-						<Item Name="Write Threshold Msg.lvclass" Type="LVClass" URL="../Implementations/Processor/ThresholdProcessor1D/ThresholdProcessor1D Messages/Write Threshold Msg/Write Threshold Msg.lvclass"/>
-					</Item>
-					<Item Name="ThresholdProcessor1D.lvclass" Type="LVClass" URL="../Implementations/Processor/ThresholdProcessor1D/ThresholdProcessor1D.lvclass"/>
-				</Item>
-			</Item>
-			<Item Name="Extractor" Type="Folder">
-				<Item Name="MassSpectrumExtractor" Type="Folder">
-					<Item Name="MassSpectrumExtractor.lvclass" Type="LVClass" URL="../Implementations/Extractor/MassSpectrumExtractor/MassSpectrumExtractor.lvclass"/>
-					<Item Name="Graph with cursors XControl.xctl" Type="XControl" URL="../Implementations/Extractor/MassSpectrumExtractor/Graph with cursors/Graph with cursors XControl.xctl"/>
-				</Item>
-				<Item Name="ImagingExtractor" Type="Folder">
-					<Item Name="ImagingExtractor.lvclass" Type="LVClass" URL="../Implementations/Extractor/ImagingExtractor/ImagingExtractor.lvclass"/>
-				</Item>
-			</Item>
-			<Item Name="Collector" Type="Folder">
-				<Item Name="AverageCollector1D" Type="Folder">
-					<Item Name="AverageCollector1D.lvclass" Type="LVClass" URL="../Implementations/Collector/AverageCollector1D/AverageCollector1D.lvclass"/>
-				</Item>
-				<Item Name="AverageCollector2D" Type="Folder">
-					<Item Name="AverageCollector2D.lvclass" Type="LVClass" URL="../Implementations/Collector/AverageCollector2D/AverageCollector2D.lvclass"/>
-				</Item>
-			</Item>
-			<Item Name="Hardware" Type="Folder">
-				<Item Name="Simulated Hardware" Type="Folder">
-					<Item Name="ReadoutDevice" Type="Folder">
-						<Item Name="Simulated Oscilloscope" Type="Folder">
-							<Item Name="Messages" Type="Folder">
-								<Item Name="Write params Msg.lvclass" Type="LVClass" URL="../Implementations/Hardware/Simulated Hardware/ReadoutDevice/Simulated Oscilloscope/Simulated Oscilloscope Messages/Write params Msg/Write params Msg.lvclass"/>
-							</Item>
-							<Item Name="Simulated Oscilloscope.lvclass" Type="LVClass" URL="../Implementations/Hardware/Simulated Hardware/ReadoutDevice/Simulated Oscilloscope/Simulated Oscilloscope.lvclass"/>
-						</Item>
-						<Item Name="Simulated Videocamera" Type="Folder">
-							<Item Name="Simulated Videocamera.lvclass" Type="LVClass" URL="../Implementations/Hardware/Simulated Hardware/ReadoutDevice/Simulated Videocamera/Simulated Videocamera.lvclass"/>
-						</Item>
-					</Item>
-					<Item Name="ParameterDevice" Type="Folder">
-						<Item Name="Simulated ParameterDevice" Type="Folder">
-							<Item Name="Simulated ParameterDevice.lvclass" Type="LVClass" URL="../Implementations/Hardware/Simulated Hardware/ParameterDevice/Simulated ParameterDevice/Simulated ParameterDevice.lvclass"/>
-						</Item>
-					</Item>
-				</Item>
-				<Item Name="Real Hardware" Type="Folder">
-					<Item Name="ReadoutDevice" Type="Folder">
-						<Item Name="Agilent DSO-X 3032A" Type="Folder">
-							<Item Name="Messages" Type="Folder">
-								<Item Name="Write Instrument Handle Msg.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ReadoutDevice/Agilent DSO-X 3032A/Agilent DSO-X 3032A Messages/Write Instrument Handle Msg/Write Instrument Handle Msg.lvclass"/>
-								<Item Name="Write Timeout Msg.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ReadoutDevice/Agilent DSO-X 3032A/Agilent DSO-X 3032A Messages/Write Timeout Msg/Write Timeout Msg.lvclass"/>
-								<Item Name="Write CurrentChannel Msg.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ReadoutDevice/Agilent DSO-X 3032A/Agilent DSO-X 3032A Messages/Write CurrentChannel Msg/Write CurrentChannel Msg.lvclass"/>
-								<Item Name="Write Settings Msg.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ReadoutDevice/Agilent DSO-X 3032A/Agilent DSO-X 3032A Messages/Write Settings Msg/Write Settings Msg.lvclass"/>
-								<Item Name="Read Config From Device Msg.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ReadoutDevice/Agilent DSO-X 3032A/Agilent DSO-X 3032A Messages/Read Config From Device Msg/Read Config From Device Msg.lvclass"/>
-							</Item>
-							<Item Name="Agilent DSO-X 3032A.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ReadoutDevice/Agilent DSO-X 3032A/Agilent DSO-X 3032A.lvclass"/>
-						</Item>
-						<Item Name="IVI Oscilloscope" Type="Folder">
-							<Item Name="Messages" Type="Folder">
-								<Item Name="Write Resource Name Msg.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ReadoutDevice/IVI Oscilloscope/IVI Oscilloscope Messages/Write Resource Name Msg/Write Resource Name Msg.lvclass"/>
-							</Item>
-							<Item Name="IVI Oscilloscope.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ReadoutDevice/IVI Oscilloscope/IVI Oscilloscope.lvclass"/>
-						</Item>
-						<Item Name="Videoscan" Type="Folder">
-							<Item Name="Videoscan.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ReadoutDevice/Videoscan/Videoscan.lvclass"/>
-							<Item Name="VideoScanDeviceLibrary.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ReadoutDevice/Videoscan/VideoScanLibrary/VideoScanDeviceLibrary.lvclass"/>
-						</Item>
-					</Item>
-					<Item Name="ParameterDevice" Type="Folder">
-						<Item Name="SolarSystems M266" Type="Folder">
-							<Item Name="SolarSystems M266.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems M266.lvclass"/>
-							<Item Name="SDK_LV_VI_x64.llb" Type="Document" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb"/>
-						</Item>
-						<Item Name="Stepper3D" Type="Folder">
-							<Item Name="Stepper3D Messages" Type="Folder">
-								<Item Name="Set Conversion Table Msg.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/Stepper3D/Stepper3D Messages/Set Conversion Table Msg/Set Conversion Table Msg.lvclass"/>
-								<Item Name="Refresh Info Msg.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/Stepper3D/Stepper3D Messages/Refresh Info Msg/Refresh Info Msg.lvclass"/>
-							</Item>
-							<Item Name="Stepper3D.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/Stepper3D/Stepper3D.lvclass"/>
-							<Item Name="Stepper3D.lvlib" Type="Library" URL="../../Libs/stepper3D.lib/stepper3D.lvlib"/>
-						</Item>
-						<Item Name="SolarSystems M266 Old" Type="Folder">
-							<Item Name="SolarSystems M266 Old.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/SolarSystems M266 Old.lvclass"/>
-						</Item>
-					</Item>
-				</Item>
-			</Item>
-		</Item>
 		<Item Name="Launcher" Type="Folder">
 			<Item Name="Configuration" Type="Folder">
 				<Item Name="Load configuration.vi" Type="VI" URL="../Loader/Load configuration.vi"/>
@@ -243,43 +155,13 @@
 		<Item Name="Viewable Actor.lvlib" Type="Library" URL="../Framework/Interfaces/Viewable Actor/Viewable Actor.lvlib"/>
 		<Item Name="Pipelined Actor.lvlib" Type="Library" URL="../Framework/Interfaces/Pipelined Actor/Pipelined Actor.lvlib"/>
 		<Item Name="Launcher2.0.vi" Type="VI" URL="../../Launcher2.0.vi"/>
-		<Item Name="Launcher.vi" Type="VI" URL="../../Launcher.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
-				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
-				<Item Name="LVCursorListTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVCursorListTypeDef.ctl"/>
-				<Item Name="Version To Dotted String.vi" Type="VI" URL="/&lt;vilib&gt;/_xctls/Version To Dotted String.vi"/>
-				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
-				<Item Name="Get Waveform Subset.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Get Waveform Subset.vi"/>
-				<Item Name="WDT Get Waveform Subset DBL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset DBL.vi"/>
-				<Item Name="Number of Waveform Samples.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Number of Waveform Samples.vi"/>
-				<Item Name="WDT Number of Waveform Samples DBL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples DBL.vi"/>
-				<Item Name="WDT Number of Waveform Samples CDB.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples CDB.vi"/>
-				<Item Name="WDT Number of Waveform Samples EXT.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples EXT.vi"/>
-				<Item Name="WDT Number of Waveform Samples I16.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples I16.vi"/>
-				<Item Name="WDT Number of Waveform Samples I32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples I32.vi"/>
-				<Item Name="WDT Number of Waveform Samples I8.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples I8.vi"/>
-				<Item Name="WDT Number of Waveform Samples SGL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples SGL.vi"/>
-				<Item Name="Check for multiple of dt.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for multiple of dt.vi"/>
-				<Item Name="Check for Equality.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for Equality.vi"/>
-				<Item Name="DWDT Get Waveform Subset.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Get Waveform Subset.vi"/>
-				<Item Name="DWDT Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Digital Size.vi"/>
-				<Item Name="DTbl Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Size.vi"/>
-				<Item Name="DTbl Digital Subset.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Subset.vi"/>
-				<Item Name="DWDT Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Error Code.vi"/>
-				<Item Name="WDT Get Waveform Subset CDB.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset CDB.vi"/>
-				<Item Name="WDT Get Waveform Subset EXT.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset EXT.vi"/>
-				<Item Name="WDT Get Waveform Subset I16.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset I16.vi"/>
-				<Item Name="WDT Get Waveform Subset I32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset I32.vi"/>
-				<Item Name="WDT Get Waveform Subset I8.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset I8.vi"/>
-				<Item Name="WDT Get Waveform Subset SGL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset SGL.vi"/>
-				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
-				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
@@ -307,16 +189,6 @@
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
-				<Item Name="IviScope Initialize With Options.vi" Type="VI" URL="/&lt;vilib&gt;/ivi/iviscope/_iviscope.llb/IviScope Initialize With Options.vi"/>
-				<Item Name="IviScope Close.vi" Type="VI" URL="/&lt;vilib&gt;/ivi/iviscope/_iviscope.llb/IviScope Close.vi"/>
-				<Item Name="IviScope Initiate Acquisition.vi" Type="VI" URL="/&lt;vilib&gt;/ivi/iviscope/_iviscope.llb/IviScope Initiate Acquisition.vi"/>
-				<Item Name="IviScope IVI Error Converter.vi" Type="VI" URL="/&lt;vilib&gt;/ivi/iviscope/_iviscope.llb/IviScope IVI Error Converter.vi"/>
-				<Item Name="IviScope Acquisition Status.vi" Type="VI" URL="/&lt;vilib&gt;/ivi/iviscope/_iviscope.llb/IviScope Acquisition Status.vi"/>
-				<Item Name="IviScope Abort.vi" Type="VI" URL="/&lt;vilib&gt;/ivi/iviscope/_iviscope.llb/IviScope Abort.vi"/>
-				<Item Name="IviScope Fetch Waveform.vi" Type="VI" URL="/&lt;vilib&gt;/ivi/iviscope/_iviscope.llb/IviScope Fetch Waveform.vi"/>
-				<Item Name="IviScope Actual Record Length.vi" Type="VI" URL="/&lt;vilib&gt;/ivi/iviscope/_iviscope.llb/IviScope Actual Record Length.vi"/>
-				<Item Name="IviScope Initialize.vi" Type="VI" URL="/&lt;vilib&gt;/ivi/iviscope/_iviscope.llb/IviScope Initialize.vi"/>
-				<Item Name="IviScope Read Waveform.vi" Type="VI" URL="/&lt;vilib&gt;/ivi/iviscope/_iviscope.llb/IviScope Read Waveform.vi"/>
 				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
 				<Item Name="compatReadText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatReadText.vi"/>
@@ -340,90 +212,14 @@
 				<Item Name="Get System Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/Get System Directory.vi"/>
 				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
 				<Item Name="Get LV Class Default Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value.vi"/>
-				<Item Name="Dynamic To Waveform Array.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Dynamic To Waveform Array.vi"/>
-				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
-				<Item Name="subBuildXYGraph.vi" Type="VI" URL="/&lt;vilib&gt;/express/express controls/BuildXYGraphBlock.llb/subBuildXYGraph.vi"/>
-				<Item Name="Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Waveform Array To Dynamic.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-				<Item Name="Parse State Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue__jki_lib_state_machine.vi"/>
-				<Item Name="Add State(s) to Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__jki_lib_state_machine.vi"/>
-				<Item Name="Build State String with Arguments__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Build State String with Arguments__jki_lib_state_machine.vi"/>
-				<Item Name="Unset Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Unset Busy.vi"/>
-				<Item Name="Set Cursor.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor.vi"/>
-				<Item Name="Set Cursor (Cursor ID).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor (Cursor ID).vi"/>
-				<Item Name="Set Cursor (Icon Pict).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor (Icon Pict).vi"/>
-				<Item Name="Set Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Busy.vi"/>
-				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
-				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
-				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
-				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
-				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
-				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
-				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
-				<Item Name="WebSockets.lvlib" Type="Library" URL="/&lt;vilib&gt;/MediaMongrels Ltd/WebSockets/WebSockets/WebSockets.lvlib"/>
 				<Item Name="Monitor Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/MGI/Monitored Actor/Monitor Data/Monitor Data.lvclass"/>
-			</Item>
-			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="ivi.dll" Type="Document" URL="ivi.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="WaitForEndOperation.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/WaitForEndOperation.vi"/>
-			<Item Name="sls_GetStatus.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_GetStatus.vi"/>
-			<Item Name="SolarLS.Sdk_x64.dll" Type="Document" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SolarLS.Sdk_x64.dll"/>
-			<Item Name="sls_GetError.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_GetError.vi"/>
-			<Item Name="sls_Init.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_Init.vi"/>
-			<Item Name="sls_GetWL.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_GetWL.vi"/>
-			<Item Name="sls_GetGratingPrm.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_GetGratingPrm.vi"/>
-			<Item Name="sls_GetShutterState.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_GetShutterState.vi"/>
-			<Item Name="sls_GetDispersion.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_GetDispersion.vi"/>
-			<Item Name="sls_GetFilter.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_GetFilter.vi"/>
-			<Item Name="sls_GetMirror.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_GetMirror.vi"/>
-			<Item Name="sls_GetSlitWidth.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_GetSlitWidth.vi"/>
-			<Item Name="sls_SetWL.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_SetWL.vi"/>
-			<Item Name="sls_SetSlitWidth.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_SetSlitWidth.vi"/>
-			<Item Name="sls_SetMirror.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_SetMirror.vi"/>
-			<Item Name="sls_SetFilter.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_SetFilter.vi"/>
-			<Item Name="sls_ShutterClose.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_ShutterClose.vi"/>
-			<Item Name="sls_ShutterOpen.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_ShutterOpen.vi"/>
-			<Item Name="sls_ResetGrating.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_ResetGrating.vi"/>
-			<Item Name="sls_SetActiveGrating.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_SetActiveGrating.vi"/>
-			<Item Name="sls_GetActiveGrating.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_GetActiveGrating.vi"/>
-			<Item Name="sls_GetGratingCount.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_GetGratingCount.vi"/>
-			<Item Name="sls_GetCalibration.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_GetCalibration.vi"/>
-			<Item Name="sls_GetPxlCalibration.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266/SolarSystems Library/SDK_LV_VI_x64.llb/sls_GetPxlCalibration.vi"/>
-			<Item Name="wlmData.dll" Type="Document" URL="wlmData.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="Array.lvlib" Type="Library" URL="../../Libs/array.lib/Array.lvlib"/>
-			<Item Name="BoudariesToEnum.vi" Type="VI" URL="../../Libs/stepper3D.lib/Low-level/BoudariesToEnum.vi"/>
-			<Item Name="ReadAll.vi" Type="VI" URL="../../Libs/stepper3D.lib/Low-level/ReadAll.vi"/>
-			<Item Name="SendCommand.vi" Type="VI" URL="../../Libs/stepper3D.lib/Low-level/SendCommand.vi"/>
-			<Item Name="ConvertPostionsToString.vi" Type="VI" URL="../../Libs/stepper3D.lib/Low-level/ConvertPostionsToString.vi"/>
-			<Item Name="IviScope.dll" Type="Document" URL="IviScope.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="M266_WaitForEndOperation.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_WaitForEndOperation.vi"/>
-			<Item Name="M266_GetStatus.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetStatus.vi"/>
-			<Item Name="InstrumentManipulator.dll" Type="Document" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/InstrumentManipulator.dll"/>
-			<Item Name="M266_GetWL.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetWL.vi"/>
-			<Item Name="M266_GetMirror.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetMirror.vi"/>
-			<Item Name="M266_GetFilter.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetFilter.vi"/>
-			<Item Name="M266_GetShutterState.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetShutterState.vi"/>
-			<Item Name="M266_GetDispersion.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetDispersion.vi"/>
-			<Item Name="M266_GetSlitWidth.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetSlitWidth.vi"/>
-			<Item Name="M266_SetWL.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_SetWL.vi"/>
-			<Item Name="M266_SetSlitWidth.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_SetSlitWidth.vi"/>
-			<Item Name="M266_SetMirror.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_SetMirror.vi"/>
-			<Item Name="M266_SetFilter.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_SetFilter.vi"/>
-			<Item Name="M266_SetShutterState.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_SetShutterState.vi"/>
-			<Item Name="M266_GetError.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetError.vi"/>
-			<Item Name="M266_Init.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_Init.vi"/>
-			<Item Name="M266_Final.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_Final.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

@@ -1,11 +1,11 @@
 <configuration>
 	<info>
-		<name>Videoscan</name>
-		<description>Videoscan and Wavelength Setter</description>
+		<name>Videoscan without Stepper</name>
+		<description>Videoscan and Simulated ParameterDevice</description>
 	</info>
 	<devices>
 		<readout>Videoscan</readout>
-		<parameter>Wavelength Setter</parameter>
+		<parameter>Simulated ParameterDevice</parameter>
 	</devices>
 	<pipeline>
 		<processor>AbstractProcessor2D</processor>

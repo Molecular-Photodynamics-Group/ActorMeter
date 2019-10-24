@@ -8,7 +8,9 @@
 			<class>..\Implementations\Hardware\Simulated Hardware\ReadoutDevice\Simulated Videocamera</class>
 		</readout>
 		<parameter>
-			<class>..\Implementations\Hardware\Real Hardware\ParameterDevice\Wavelength Setter</class>
+			<class>..\Implementations\Hardware\Real Hardware\ParameterDevice\SolarSystems M266</class>
+			<class>..\Implementations\Hardware\Real Hardware\ParameterDevice\SolarSystems M266 Old</class>
+			<class>..\Implementations\Hardware\Real Hardware\ParameterDevice\Stepper3D</class>
 			<class>..\Implementations\Hardware\Simulated Hardware\ParameterDevice\Simulated ParameterDevice</class>
 		</parameter>
 	</devices>
@@ -19,10 +21,14 @@
 			<class>..\Implementations\Processor\ThresholdProcessor1D</class>
 		</processor>
 		<collector>
+			<class>..\Framework\Collector\AbstractCollector1D</class>
+			<class>..\Framework\Collector\AbstractCollector2D</class>
 			<class>..\Implementations\Collector\AverageCollector1D</class>
 			<class>..\Implementations\Collector\AverageCollector2D</class>
 		</collector>
 		<extractor>
+			<class>..\Framework\Extractor\AbstractExtractor1D</class>
+			<class>..\Framework\Extractor\AbstractExtractor2D</class>
 			<class>..\Implementations\Extractor\MassSpectrumExtractor</class>
 			<class>..\Implementations\Extractor\ImagingExtractor</class>
 		</extractor>
