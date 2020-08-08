@@ -1,0 +1,15 @@
+<configuration>
+	<info>
+		<name>NI Vision Camera without Stepper</name>
+		<description>NI Vision Camera and Simulated ParameterDevice</description>
+	</info>
+	<devices>
+		<readout>NI Vision Camera</readout>
+		<parameter>Simulated ParameterDevice</parameter>
+	</devices>
+	<pipeline>
+		<processor>ThresholdProcessor2D</processor>
+		<collector>AverageCollector2D</collector>
+		<extractor>ImagingExtractor</extractor>
+	</pipeline>
+</configuration>

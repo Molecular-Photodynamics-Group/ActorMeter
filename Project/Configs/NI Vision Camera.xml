@@ -1,0 +1,15 @@
+<configuration>
+	<info>
+		<name>NI Vision Camera</name>
+		<description>NI Vision Camera and Stepper3D</description>
+	</info>
+	<devices>
+		<readout>NI Vision Camera</readout>
+		<parameter>Stepper3D</parameter>
+	</devices>
+	<pipeline>
+		<processor>ThresholdProcessor2D</processor>
+		<collector>AverageCollector2D</collector>
+		<extractor>ImagingExtractor</extractor>
+	</pipeline>
+</configuration>

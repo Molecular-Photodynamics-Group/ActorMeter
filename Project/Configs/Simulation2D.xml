@@ -8,7 +8,7 @@
 		<parameter>Simulated ParameterDevice</parameter>
 	</devices>
 	<pipeline>
-		<processor>AbstractProcessor2D</processor>
+		<processor>ThresholdProcessor2D</processor>
 		<collector>AverageCollector2D</collector>
 		<extractor>ImagingExtractor</extractor>
 	</pipeline>

@@ -143,6 +143,14 @@
 					</Item>
 					<Item Name="ThresholdProcessor1D.lvclass" Type="LVClass" URL="../Implementations/Processor/ThresholdProcessor1D/ThresholdProcessor1D.lvclass"/>
 				</Item>
+				<Item Name="ThresholdProcessor2D" Type="Folder">
+					<Item Name="ThresholdProcessor2D Messages" Type="Folder">
+						<Item Name="Write Threshold2D Msg" Type="Folder">
+							<Item Name="Write Threshold2D Msg.lvclass" Type="LVClass" URL="../Implementations/Processor/ThresholdProcessor2D/ThresholdProcessor2D Messages/Write Threshold2D Msg/Write Threshold2D Msg.lvclass"/>
+						</Item>
+					</Item>
+					<Item Name="ThresholdProcessor2D.lvclass" Type="LVClass" URL="../Implementations/Processor/ThresholdProcessor2D/ThresholdProcessor2D.lvclass"/>
+				</Item>
 			</Item>
 			<Item Name="Extractor" Type="Folder">
 				<Item Name="MassSpectrumExtractor" Type="Folder">
@@ -202,6 +210,14 @@
 							<Item Name="Videoscan.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ReadoutDevice/Videoscan/Videoscan.lvclass"/>
 							<Item Name="VideoScanDeviceLibrary.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ReadoutDevice/Videoscan/VideoScanLibrary/VideoScanDeviceLibrary.lvclass"/>
 						</Item>
+						<Item Name="NI Vision Camera" Type="Folder">
+							<Item Name="NI Vision Camera Messages" Type="Folder">
+								<Item Name="Set Camera Configuration Msg" Type="Folder">
+									<Item Name="Set Camera Configuration Msg.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ReadoutDevice/NI Vision Camera/NI Vision Camera Messages/Set Camera Configuration Msg/Set Camera Configuration Msg.lvclass"/>
+								</Item>
+							</Item>
+							<Item Name="NI Vision Camera.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ReadoutDevice/NI Vision Camera/NI Vision Camera.lvclass"/>
+						</Item>
 					</Item>
 					<Item Name="ParameterDevice" Type="Folder">
 						<Item Name="SolarSystems M266" Type="Folder">
@@ -214,7 +230,7 @@
 								<Item Name="Refresh Info Msg.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/Stepper3D/Stepper3D Messages/Refresh Info Msg/Refresh Info Msg.lvclass"/>
 							</Item>
 							<Item Name="Stepper3D.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/Stepper3D/Stepper3D.lvclass"/>
-							<Item Name="Stepper3D.lvlib" Type="Library" URL="../../Libs/stepper3D.lib/stepper3D.lvlib"/>
+							<Item Name="Stepper3D.lvlib" Type="Library" URL="../Libs/stepper3D.lib/stepper3D.lvlib"/>
 						</Item>
 						<Item Name="SolarSystems M266 Old" Type="Folder">
 							<Item Name="SolarSystems M266 Old.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/SolarSystems M266 Old.lvclass"/>
@@ -239,11 +255,16 @@
 			<Item Name="Get project path.vi" Type="VI" URL="../Loader/Get project path.vi"/>
 			<Item Name="Get registry path.vi" Type="VI" URL="../Loader/Get registry path.vi"/>
 		</Item>
+		<Item Name="Libs" Type="Folder">
+			<Item Name="array.lib" Type="Folder">
+				<Item Name="Array.lvlib" Type="Library" URL="../Libs/array.lib/Array.lvlib"/>
+			</Item>
+		</Item>
 		<Item Name="Observable Actor.lvlib" Type="Library" URL="../Framework/Interfaces/Observable Actor/Observable Actor.lvlib"/>
-		<Item Name="Viewable Actor.lvlib" Type="Library" URL="../Framework/Interfaces/Viewable Actor/Viewable Actor.lvlib"/>
 		<Item Name="Pipelined Actor.lvlib" Type="Library" URL="../Framework/Interfaces/Pipelined Actor/Pipelined Actor.lvlib"/>
 		<Item Name="Launcher2.0.vi" Type="VI" URL="../../Launcher2.0.vi"/>
-		<Item Name="Launcher.vi" Type="VI" URL="../../Launcher.vi"/>
+		<Item Name="Viewable Actor.lvlib" Type="Library" URL="../Framework/Interfaces/Viewable Actor/Viewable Actor.lvlib"/>
+		<Item Name="registry.xml" Type="Document" URL="../registry.xml"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>
@@ -254,29 +275,6 @@
 				<Item Name="LVCursorListTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVCursorListTypeDef.ctl"/>
 				<Item Name="Version To Dotted String.vi" Type="VI" URL="/&lt;vilib&gt;/_xctls/Version To Dotted String.vi"/>
 				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
-				<Item Name="Get Waveform Subset.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Get Waveform Subset.vi"/>
-				<Item Name="WDT Get Waveform Subset DBL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset DBL.vi"/>
-				<Item Name="Number of Waveform Samples.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Number of Waveform Samples.vi"/>
-				<Item Name="WDT Number of Waveform Samples DBL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples DBL.vi"/>
-				<Item Name="WDT Number of Waveform Samples CDB.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples CDB.vi"/>
-				<Item Name="WDT Number of Waveform Samples EXT.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples EXT.vi"/>
-				<Item Name="WDT Number of Waveform Samples I16.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples I16.vi"/>
-				<Item Name="WDT Number of Waveform Samples I32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples I32.vi"/>
-				<Item Name="WDT Number of Waveform Samples I8.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples I8.vi"/>
-				<Item Name="WDT Number of Waveform Samples SGL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples SGL.vi"/>
-				<Item Name="Check for multiple of dt.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for multiple of dt.vi"/>
-				<Item Name="Check for Equality.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for Equality.vi"/>
-				<Item Name="DWDT Get Waveform Subset.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Get Waveform Subset.vi"/>
-				<Item Name="DWDT Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Digital Size.vi"/>
-				<Item Name="DTbl Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Size.vi"/>
-				<Item Name="DTbl Digital Subset.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Subset.vi"/>
-				<Item Name="DWDT Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Error Code.vi"/>
-				<Item Name="WDT Get Waveform Subset CDB.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset CDB.vi"/>
-				<Item Name="WDT Get Waveform Subset EXT.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset EXT.vi"/>
-				<Item Name="WDT Get Waveform Subset I16.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset I16.vi"/>
-				<Item Name="WDT Get Waveform Subset I32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset I32.vi"/>
-				<Item Name="WDT Get Waveform Subset I8.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset I8.vi"/>
-				<Item Name="WDT Get Waveform Subset SGL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset SGL.vi"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
@@ -350,20 +348,50 @@
 				<Item Name="Parse State Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue__jki_lib_state_machine.vi"/>
 				<Item Name="Add State(s) to Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__jki_lib_state_machine.vi"/>
 				<Item Name="Build State String with Arguments__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Build State String with Arguments__jki_lib_state_machine.vi"/>
-				<Item Name="Unset Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Unset Busy.vi"/>
-				<Item Name="Set Cursor.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor.vi"/>
-				<Item Name="Set Cursor (Cursor ID).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor (Cursor ID).vi"/>
-				<Item Name="Set Cursor (Icon Pict).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor (Icon Pict).vi"/>
-				<Item Name="Set Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Busy.vi"/>
-				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
-				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
-				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="WebSockets.lvlib" Type="Library" URL="/&lt;vilib&gt;/MediaMongrels Ltd/WebSockets/WebSockets/WebSockets.lvlib"/>
 				<Item Name="Monitor Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/MGI/Monitored Actor/Monitor Data/Monitor Data.lvclass"/>
+				<Item Name="Get Waveform Subset.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Get Waveform Subset.vi"/>
+				<Item Name="WDT Get Waveform Subset DBL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset DBL.vi"/>
+				<Item Name="Number of Waveform Samples.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Number of Waveform Samples.vi"/>
+				<Item Name="WDT Number of Waveform Samples DBL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples DBL.vi"/>
+				<Item Name="WDT Number of Waveform Samples CDB.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples CDB.vi"/>
+				<Item Name="WDT Number of Waveform Samples EXT.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples EXT.vi"/>
+				<Item Name="WDT Number of Waveform Samples I16.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples I16.vi"/>
+				<Item Name="WDT Number of Waveform Samples I32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples I32.vi"/>
+				<Item Name="WDT Number of Waveform Samples I8.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples I8.vi"/>
+				<Item Name="WDT Number of Waveform Samples SGL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Number of Waveform Samples SGL.vi"/>
+				<Item Name="Check for multiple of dt.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for multiple of dt.vi"/>
+				<Item Name="Check for Equality.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for Equality.vi"/>
+				<Item Name="DWDT Get Waveform Subset.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Get Waveform Subset.vi"/>
+				<Item Name="DWDT Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Digital Size.vi"/>
+				<Item Name="DTbl Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Size.vi"/>
+				<Item Name="DTbl Digital Subset.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Subset.vi"/>
+				<Item Name="DWDT Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Error Code.vi"/>
+				<Item Name="WDT Get Waveform Subset CDB.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset CDB.vi"/>
+				<Item Name="WDT Get Waveform Subset EXT.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset EXT.vi"/>
+				<Item Name="WDT Get Waveform Subset I16.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset I16.vi"/>
+				<Item Name="WDT Get Waveform Subset I32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset I32.vi"/>
+				<Item Name="WDT Get Waveform Subset I8.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset I8.vi"/>
+				<Item Name="WDT Get Waveform Subset SGL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get Waveform Subset SGL.vi"/>
+				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/IMAQdx.ctl"/>
+				<Item Name="NI_Vision_Acquisition_Software.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/driver/NI_Vision_Acquisition_Software.lvlib"/>
+				<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
+				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
+				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
+				<Item Name="IMAQ ImageToArray" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ImageToArray"/>
+				<Item Name="IMAQ Dispose" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Dispose"/>
+				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
+				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
+				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
+				<Item Name="Unset Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Unset Busy.vi"/>
+				<Item Name="Set Cursor.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor.vi"/>
+				<Item Name="Set Cursor (Cursor ID).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor (Cursor ID).vi"/>
+				<Item Name="Set Cursor (Icon Pict).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor (Icon Pict).vi"/>
+				<Item Name="Set Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Busy.vi"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="ivi.dll" Type="Document" URL="ivi.dll">
@@ -399,11 +427,6 @@
 			<Item Name="wlmData.dll" Type="Document" URL="wlmData.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Array.lvlib" Type="Library" URL="../../Libs/array.lib/Array.lvlib"/>
-			<Item Name="BoudariesToEnum.vi" Type="VI" URL="../../Libs/stepper3D.lib/Low-level/BoudariesToEnum.vi"/>
-			<Item Name="ReadAll.vi" Type="VI" URL="../../Libs/stepper3D.lib/Low-level/ReadAll.vi"/>
-			<Item Name="SendCommand.vi" Type="VI" URL="../../Libs/stepper3D.lib/Low-level/SendCommand.vi"/>
-			<Item Name="ConvertPostionsToString.vi" Type="VI" URL="../../Libs/stepper3D.lib/Low-level/ConvertPostionsToString.vi"/>
 			<Item Name="IviScope.dll" Type="Document" URL="IviScope.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -424,6 +447,16 @@
 			<Item Name="M266_GetError.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetError.vi"/>
 			<Item Name="M266_Init.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_Init.vi"/>
 			<Item Name="M266_Final.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_Final.vi"/>
+			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="BoudariesToEnum.vi" Type="VI" URL="../Libs/stepper3D.lib/Low-level/BoudariesToEnum.vi"/>
+			<Item Name="ConvertPostionsToString.vi" Type="VI" URL="../Libs/stepper3D.lib/Low-level/ConvertPostionsToString.vi"/>
+			<Item Name="ReadAll.vi" Type="VI" URL="../Libs/stepper3D.lib/Low-level/ReadAll.vi"/>
+			<Item Name="SendCommand.vi" Type="VI" URL="../Libs/stepper3D.lib/Low-level/SendCommand.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

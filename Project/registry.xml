@@ -4,6 +4,7 @@
 			<class>..\Implementations\Hardware\Real Hardware\ReadoutDevice\Agilent DSO-X 3032A</class>
 			<class>..\Implementations\Hardware\Real Hardware\ReadoutDevice\IVI Oscilloscope</class>
 			<class>..\Implementations\Hardware\Real Hardware\ReadoutDevice\Videoscan</class>
+			<class>..\Implementations\Hardware\Real Hardware\ReadoutDevice\NI Vision Camera</class>
 			<class>..\Implementations\Hardware\Simulated Hardware\ReadoutDevice\Simulated Oscilloscope</class>
 			<class>..\Implementations\Hardware\Simulated Hardware\ReadoutDevice\Simulated Videocamera</class>
 		</readout>
@@ -19,6 +20,7 @@
 			<class>..\Framework\Processor\AbstractProcessor1D</class>
 			<class>..\Framework\Processor\AbstractProcessor2D</class>
 			<class>..\Implementations\Processor\ThresholdProcessor1D</class>
+			<class>..\Implementations\Processor\ThresholdProcessor2D</class>
 		</processor>
 		<collector>
 			<class>..\Framework\Collector\AbstractCollector1D</class>
