@@ -427,9 +427,6 @@
 			<Item Name="wlmData.dll" Type="Document" URL="wlmData.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="IviScope.dll" Type="Document" URL="IviScope.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="M266_WaitForEndOperation.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_WaitForEndOperation.vi"/>
 			<Item Name="M266_GetStatus.vi" Type="VI" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/M266_LV_VI.llb/M266_GetStatus.vi"/>
 			<Item Name="InstrumentManipulator.dll" Type="Document" URL="../Implementations/Hardware/Real Hardware/ParameterDevice/SolarSystems M266 Old/M266 Old Library/InstrumentManipulator.dll"/>
@@ -457,6 +454,9 @@
 			<Item Name="ConvertPostionsToString.vi" Type="VI" URL="../Libs/stepper3D.lib/Low-level/ConvertPostionsToString.vi"/>
 			<Item Name="ReadAll.vi" Type="VI" URL="../Libs/stepper3D.lib/Low-level/ReadAll.vi"/>
 			<Item Name="SendCommand.vi" Type="VI" URL="../Libs/stepper3D.lib/Low-level/SendCommand.vi"/>
+			<Item Name="IviScope_64.dll" Type="Document" URL="IviScope_64.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
