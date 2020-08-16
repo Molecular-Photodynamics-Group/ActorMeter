@@ -217,6 +217,7 @@
 								</Item>
 							</Item>
 							<Item Name="NI Vision Camera.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ReadoutDevice/NI Vision Camera/NI Vision Camera.lvclass"/>
+							<Item Name="NI Vision Camera Device.lvclass" Type="LVClass" URL="../Implementations/Hardware/Real Hardware/ReadoutDevice/NI Vision Camera/NI Vision Camera Device/NI Vision Camera Device.lvclass"/>
 						</Item>
 					</Item>
 					<Item Name="ParameterDevice" Type="Folder">
@@ -454,7 +455,7 @@
 			<Item Name="ConvertPostionsToString.vi" Type="VI" URL="../Libs/stepper3D.lib/Low-level/ConvertPostionsToString.vi"/>
 			<Item Name="ReadAll.vi" Type="VI" URL="../Libs/stepper3D.lib/Low-level/ReadAll.vi"/>
 			<Item Name="SendCommand.vi" Type="VI" URL="../Libs/stepper3D.lib/Low-level/SendCommand.vi"/>
-			<Item Name="IviScope_64.dll" Type="Document" URL="IviScope_64.dll">
+			<Item Name="IviScope.dll" Type="Document" URL="IviScope.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
