@@ -455,7 +455,7 @@
 			<Item Name="ConvertPostionsToString.vi" Type="VI" URL="../Libs/stepper3D.lib/Low-level/ConvertPostionsToString.vi"/>
 			<Item Name="ReadAll.vi" Type="VI" URL="../Libs/stepper3D.lib/Low-level/ReadAll.vi"/>
 			<Item Name="SendCommand.vi" Type="VI" URL="../Libs/stepper3D.lib/Low-level/SendCommand.vi"/>
-			<Item Name="IviScope.dll" Type="Document" URL="IviScope.dll">
+			<Item Name="IviScope_64.dll" Type="Document" URL="IviScope_64.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
